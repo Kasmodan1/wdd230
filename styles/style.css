@@ -1,7 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cinzel+Decorative&family=Libre+Baskerville:ital@1&family=Open+Sans&family=Playfair+Display:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
+header {
+  height: 250px;
+  background-color: #0076b6;
+  display: flex;
+  grid-gap: 10px;
+}
 
+header img {
+  padding-left: 20px;
+  border: 1px black;
+  box-shadow: 5px 5px 10px #6f7364;
+}
 
+header h1 {
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+}
 
 .linkColor {
   color: blue;
@@ -9,4 +41,17 @@
 
 #lastupdate {
 	color: yellowgreen;
+}
+
+footer {
+  background-color: #0076b6;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  border: 2px solid blue;
 }
