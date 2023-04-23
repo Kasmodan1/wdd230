@@ -1,4 +1,5 @@
-const lastupdate = document.querySelector("#lastupdate")
+const lastupdate = document.querySelector("#lastupdate");
+const lastModified = new Date(document.lastModified);
 
 try {
 	const date = {
@@ -11,7 +12,7 @@ try {
     hourCycle: "h12"
   };
   
-lastupdate.innerHTML = `Last Updated: <span>${new Date().toLocaleDateString("en-US", date)} ${new Date().toLocaleTimeString('it-US', time)}</span>`;}
+lastupdate.innerHTML = `Last Updated: <span>${lastModified.toLocaleDateString("en-US", date)} ${lastModified.toLocaleTimeString('en-US', time)}</span>`;}
 
 catch (e) {
 	console.log("Error with code");
