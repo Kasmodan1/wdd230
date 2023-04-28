@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cinzel+Decorative&family=Libre+Baskerville:ital@1&family=Open+Sans&family=Playfair+Display:ital,wght@1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cinzel+Decorative&family=Libre+Baskerville:ital@1&family=Open+Sans&family=Playfair+Display:ital,wght@1,900&family=Londrina+Outline&display=swap');
+
 
 header {
   height: 250px;
@@ -47,7 +47,7 @@ main {
 }
 
 main h2 {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville', 'Cinzel Decorative', sans-serif;
 }
 
 .linkColor {
@@ -60,7 +60,7 @@ main h2 {
 }
 
 footer {
-  font-family: sans-serif;
+  font-family: 'Antic Slab','Cinzel Decorative','sans-serif';
   color: white;
   height: 90px;
   width: 600px;
