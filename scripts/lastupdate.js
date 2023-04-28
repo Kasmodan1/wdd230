@@ -19,7 +19,8 @@ try {
   
 lastupdate.innerHTML = `Last Updated: <span>${lastModified.toLocaleDateString("en-US", date)} ${lastModified.toLocaleTimeString('en-US', time)}</span>`;
 
-year.innerHTML = `<span>${lastModified.toLocaleDateString('en-US', currentYear)}</span>`}
+year.innerHTML = `<span>${lastModified.toLocaleDateString('en-US', currentYear)}</span>`;
+}
 
 catch (e) {
 	console.log("Error with code");
