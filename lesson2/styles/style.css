@@ -1,10 +1,8 @@
 header {
-  height: 250px;
+  height: auto;
   width: 600px;
   background-color: #0076b6;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 10px;
+  display: flex;
   box-shadow: 0px 0px 10px 5px #6f7364;
   border-radius: 10px;
 }
@@ -19,7 +17,7 @@ header img {
 header h1 {
   color: white;
   padding: 70px;
-  grid-column: 2/4;
+  grid-column: 1/2;
   justify-content: center;
   align-items: center;
 }
@@ -31,7 +29,7 @@ main {
 footer {
   font-family: 'Antic Slab','Cinzel Decorative','sans-serif';
   color: white;
-  height: 90px;
+  height: auto;
   width: 600px;
   background-color: #0076b6;
   border-radius: 10px;
