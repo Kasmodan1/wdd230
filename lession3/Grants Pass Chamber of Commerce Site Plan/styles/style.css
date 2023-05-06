@@ -1,0 +1,24 @@
+:root {
+  /* 4 colors chosen */
+  --primary-color: #528265;
+  --secondary-color: #444444;
+  --accent1-color: #008080;
+  --accent2-color: #87AE73;
+
+  /* chosen font(s) */
+  --heading-font: "Montserrat";
+  --paragraph-font: 'Open Sans', 'sans-serif';
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
