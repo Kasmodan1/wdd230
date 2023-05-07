@@ -99,10 +99,12 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  flex-direction: column;
 }
 nav  {
   list-style-type: none;
   display: flex;
+  flex: 1 1 auto;
 }
 nav a {
   padding:1em;
