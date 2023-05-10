@@ -25,15 +25,30 @@ header h2{
   display: none;
 }
 
-main {
-  display: flex;
-}
-
 #view {
+  height: auto;
+  width: 100vw;
   display: flex;
   justify-content: center; /* Center items along the main axis */
   align-items: center; /* Center items along the cross axis */
   flex-wrap: wrap; 
+}
+
+#visualhierarchy, #WhiteSpace, #PARC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e7dac;
+  text-align: center;
+
+}
+
+.image-item {
+ display: block;
+}
+
+.title {
+  margin: auto;
 }
 
 footer {

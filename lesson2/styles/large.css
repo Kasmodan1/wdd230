@@ -18,12 +18,9 @@
     align-items: center;
   }
   
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-  
   #view {
+    height: auto;
+    width: 100vw;
     display: flex;
     justify-content: center; /* Center items along the main axis */
     align-items: center; /* Center items along the cross axis */
