@@ -36,11 +36,13 @@ header h2{
   margin-right: auto;
   background-color: #5e7dac;
   text-align: center;
+  color: black;
 
 }
 
 .image-item {
  display: block;
+ color: white;
 }
 
 .title {
