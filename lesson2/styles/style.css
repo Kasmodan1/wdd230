@@ -1,8 +1,16 @@
 header {
   height: auto;
-  width: 390px;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Center items along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  flex-wrap: wrap; 
   background-color: #0076b6;
   box-shadow: 0px 0px 10px 5px #6f7364;
+}
+
+body {
+  size: 16px;
 }
 
 header h1 {
@@ -18,20 +26,27 @@ header h2{
 }
 
 main {
-  flex:content
+  display: flex;
+}
+
+#view {
+  display: flex;
+  justify-content: center; /* Center items along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  flex-wrap: wrap; 
 }
 
 footer {
   font-family: 'Antic Slab','Cinzel Decorative','sans-serif';
   color: white;
   height: auto;
-  width: 600px;
+  width: 100vw;
   background-color: #0076b6;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px #6f7364;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
