@@ -21,10 +21,15 @@ header h2{
   display: none;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 #view {
   height: auto;
   width: 100vw;
-  display: flex;
+  display: grid;
   justify-content: center; /* Center items along the main axis */
   align-items: center; /* Center items along the cross axis */
   flex-wrap: wrap; 
@@ -39,6 +44,8 @@ header h2{
   color: white;
   font-size: 1.2em;
 }
+
+
 
 .image-item {
  display: block;
