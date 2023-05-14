@@ -48,6 +48,7 @@ hr {
 header {
   padding: 1em;
   text-align: center;
+  font-size: 1.1em;
   background-color: var(--paragraph-background-color);
 }
 
@@ -118,5 +119,10 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+footer p{
+   color: black;
+   font-size: 1.2em;
 }
 
