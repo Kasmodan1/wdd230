@@ -1,6 +1,6 @@
 :root {
   /* 4 colors chosen */
-  --primary-color: #528265;
+  --primary-color: #3B5E45;
   --secondary-color: #444444;
   --accent1-color: #008080;
   --accent2-color: #87AE73;
@@ -10,13 +10,13 @@
   --paragraph-font: 'Open Sans', 'sans-serif';
 
 
-  --headline-color-on-white: #528265;  /* headlines on a white background */ 
+  --headline-color-on-white: #3B5E45;  /* headlines on a white background */ 
   --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #528265; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #3B5E45; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #528265;
+  --paragraph-background-color: #3B5E45;
   --nav-link-color: white;
-  --nav-background-color: #528265;
+  --nav-background-color: #3B5E45;
   --nav-hover-link-color: #E1E5F2;
   --nav-hover-background-color: #022B3A;
 }
