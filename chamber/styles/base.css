@@ -1,0 +1,76 @@
+header{
+  background-color: #3B5E45;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+.logo img {
+	width: 100px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.25rem;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+time {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0.75rem 1rem;
+	background-color: #eee;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #3B5E45;
+}
+
+.navi {
+	list-style: none;
+	padding: 0;
+}
+.navi li:first-child {
+	display: block;
+}
+.navi li {
+	display: none;
+}
+.navi a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+.navi a:hover {
+	color: #000;
+	background-color: #fff;
+	font-weight: 700;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+  .responsive li {
+    display: block;
+  }
