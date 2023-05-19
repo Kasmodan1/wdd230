@@ -9,19 +9,27 @@ buttonElement.addEventListener('click', function() {
     console.log("Imput is not blank");
 
     const liElement = document.createElement("li");
-    liElement.textContent = inputElement;
+    const deleteButton = document.createElement("button");
+
+    liElement.textContent = inputValue;
+    deleteButton.textContent = "❌";
+
+    liElement.appendChild(deleteButton);
+
+    listElement.appendChild(liElement)
+
+    deleteButton.addEventListener("click", function() {
+      liElement.remove();
+    });
+
+    inputElement.focus();
+
+    inputElement.value = "";
+
   }
   else {
     console.log("input is blank");
     
-
-  }
-
-
-  //listElement.appendChild(liElement);
-
-  const deleteButton = document.createElement("button");
-
-
+  };
 
 });
