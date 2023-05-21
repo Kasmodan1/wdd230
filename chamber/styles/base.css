@@ -1,37 +1,68 @@
 
+html {
+	font-size: 16px;
+}
+
 /*header */
 
 header{
   background-color: #3B5E45;
-	width: 100%;
-  display: flex;
+	width: 100vw;
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 35px;
   align-items: center;
 }
 
 .logo {
-	display: flex;
-	align-items: center;
-	margin-left: 1rem;
+	grid-row: 1/2;
+	grid-column: 2/3;
+	justify-self: center;
+	text-align: center;
 }
 
 .logo img {
-	width: 100px;
+	width: 100%;
+	max-width: 250px; /* Set a maximum width for the logo */
 	height: auto;
 }
 
 .headings {
+	grid-row: 2/3;
+	grid-column: 1/4;
 	display: flex;
 	flex-direction: column;
 	margin-left: 0.5rem;
+	justify-self: center;
+	align-items: center;
+	color: white;
 }
 
 .headings h1 {
-	font-size: 1.25rem;
+	font-size: 2rem;
+	margin: 0;
+}
+
+.headings h2 {
+	font-size: 2rem;
 	margin: 0;
 }
 
 .social {
 	margin-right: 1.5rem;
+	grid-row: 1/2;
+	grid-column: 3/4;
+}
+
+#datefield {
+grid-row: 3/4;
+grid-column: 1/4;
+padding: 2px;
+border: 2px solid white;
+color: white;
+justify-self: center;
+align-self: center;
+font-size: 20px;
 }
 
 /* Navigation */
@@ -164,9 +195,17 @@ nav {
 	.navi li:first-child {
 		display: none;
 	}
+
+	.logo img {
+    width: 20vw; /* Adjust the logo width based on the viewport width */
+  }
 	
 }
 
 @media only screen and (min-width: 90em){
+
+	.logo img {
+    width: 50vw; /* Adjust the logo width based on the viewport width */
+  }
   
 }
