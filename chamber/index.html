@@ -16,8 +16,8 @@
   <title>Chamber Commerce Home Page</title>
 </head>
 <body>
-  <header>
-    <div class="navcon">
+  <header id="header">
+    <div id="navcon">
       <nav>
         <ul class="navi">
           <li><a class="hamburger" href="#">&#9776; Menu</a></li>
@@ -28,6 +28,18 @@
           <li><a  href="#">Contact Us</a></li>
         </ul>
       </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav>
+          <ul class="">
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#">Discover</a></li>
+            <li><a  href="#">Directory</a></li>
+            <li><a  href="#">Join</a></li>
+            <li><a  href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="social">
       <a href="https://facebook.com" target="blank">
@@ -44,12 +56,12 @@
     </div>
     <section class="headings">
       <h1>Grants Pass</h1>
-      <h2> Chamber of Commerce</h2> 
+      <h2>Chamber of Commerce</h2> 
     </section>
     <span id="datefield"></span>
   </header>
 
-  <main>
+  <main id="main">
     <div id="hero">
       <div id="hero-box">
         <img id="hero-img" src="#" alt="#">
@@ -61,12 +73,11 @@
     </div>
   </main>
 
-  <footer>
+  <footer id="footer">
     <p>&copy; <span id="year"></span> .:|:. Scott W. Midkiff .:|:. Oregon</p>
     <span id="lastupdate"></span>
   </footer>
 <script src="scripts/lastupdate.js"></script>  
 <script src="scripts/hamburger.js"></script>
-<script src="scripts/dates.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@ header{
 	width: 100%;
   display: flex;
   align-items: center;
-  align-items: center;
 }
 
 .logo {
@@ -35,12 +34,23 @@ header{
 	margin-right: 1.5rem;
 }
 
-
 /* Navigation */
+#navcon {
+	display: flex;
+	align-items: center;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+	padding: 10px 10px 10px 10px;
+}
+
 nav {
 	margin: 0 auto;
 	max-width: 760px;
 	background-color: #3B5E45;
+	padding: 15px 15px 15px 15px
 }
 
 .navi {
@@ -52,18 +62,16 @@ nav {
 
 .navi li {
 	display: none;
-	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
 }
 
 .navi li:first-child {
 	display: block;
 }
 
-
 .navi a {
-	display: block;
+	display: flex;
 	color: #fff;
-	padding: 0.75rem;
 	text-decoration: none;
 }
 
@@ -73,38 +81,92 @@ nav {
 	font-weight: 700;
 }
 
-
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
-  <ul class="navigation responsive">
+/* the onclick JS toggles the .responsive class from display none (.navi li) to display block because the responsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navi responsive">
   */
-  .navi.responsive li {
-    display: block;
-		margin: 10px 0;
-  }
+.navi.responsive {
+	flex-direction: column;
+}
 
+.navi.responsive li {
+  display: block;
+	margin: 10px 0;
+}
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
 
-	@media only screen and (min-width: 33em){
-		.navi {
-			display: flex;
-		}
-		.navi li {
-			display: block; /* needed because of state in small view */
-			flex: 1 1 100%;
-		}
-		.navi li a {
-			color: white;
-			text-align: center;
-		}
-		
-		.navi li:first-child {
-			display: none;
-		}
-		
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+	color: white;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+	margin-left: 0;
+}
+
+#main.pushed {
+  margin-left: 220px; 
+}
+
+#header.pushed {
+	margin-left: 220px; 
+}
+
+#footer.pushed {
+	margin-left: 220px;
+}
+
+  /* Responsive Navigation */
+@media only screen and (min-width: 33em){
+	.navi {
+		display: flex;
+		flex-direction: row;
 	}
+	.navi li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navi li a {
+		color: white;
+		text-align: center;
+	}
+	
+	.navi li:first-child {
+		display: none;
+	}
+	
+}
 
-
-
-	@media only screen and (min-width: 90em){
+@media only screen and (min-width: 90em){
   
-	}
+}
