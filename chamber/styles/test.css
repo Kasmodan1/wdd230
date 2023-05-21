@@ -1,0 +1,84 @@
+
+
+/* Other Header Styles */
+header {
+  background-color: #3B5E45;
+  padding: 20px;
+}
+
+.headings {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Logo and Headings */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Social Icons */
+.social {
+  text-align: right;
+}
+
+.social a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navcon {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 90;
+  width: 100%;
+
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #3B5E45;
+}
+
+.navi li:first-child {
+	display: block;
+}
+
+/* Navigation Styles */
+.navi {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navi li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navi li a {
+  color: #000;
+  display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+.navi a:hover {
+	color: #000;
+	background-color: #fff;
+	font-weight: 700;
+}
+
+.navi.responsive li {
+  display: block;
+  margin: 10px 0;
+}
