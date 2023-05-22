@@ -168,8 +168,13 @@ nav {
   transition: margin-left 0.5s;
   padding: 16px;
 	margin-left: 0;
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
+}
+
+#hero, #event, #weather, #join, #news, .spotlight {
+	border: 1px solid black;
 }
 
 #hero {
@@ -194,9 +199,17 @@ nav {
 	grid-row: 3/4;
 	grid-column: 2/3;
 }
-#spotlight {
+.spotlight {
 	grid-row: 1/4;
 	grid-column: 3/4;
+}
+
+#spot1 {
+	border: 1px solid black;
+}
+
+#spot2 {
+	border: 1px solid black;
 }
 
 
