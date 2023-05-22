@@ -54,6 +54,14 @@ header{
 	grid-column: 3/4;
 }
 
+#facebook {
+
+}
+
+#linkedin {
+	background-color: white;
+}
+
 #datefield {
 grid-row: 3/4;
 grid-column: 1/4;
