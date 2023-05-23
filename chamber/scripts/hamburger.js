@@ -13,7 +13,7 @@ function toggleMenu() {
 
 //Side Nav overlay fuctions ******************
 function openNav() {
-  document.getElementById("mySidenav").style.width = "220px";
+  document.getElementById("mySidenav").style.width = "240px";
   document.getElementById("main").classList.add("pushed");
   document.getElementById("header").classList.add("pushed");
   document.getElementById("footer").classList.add("pushed");
