@@ -127,6 +127,8 @@ nav {
 	margin: 10px 0;
 }
 
+/* side Nav with js */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -166,11 +168,11 @@ nav {
 
 #main {
   transition: margin-left 0.5s;
-  padding: 16px;
-	margin-left: 0;
+  padding: 10px;
+	margin-left: 3px;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #hero, #event, #weather, #join, #news, .spotlight {
@@ -194,27 +196,38 @@ nav {
 	grid-row: 3/4;
 	grid-column: 1/2;
 }
+
 #join {
+	display: none;
+}
+#news {
 	grid-row: 4/5;
 	grid-column: 1/2;
 }
-#news {
+.spotlight {
 	grid-row: 5/6;
 	grid-column: 1/2;
 }
-.spotlight {
-	grid-row: 6/7;
-	grid-column: 1/2;
+
+#spot1, #spot2, #spot3 {
+	padding: 5px;
+	margin: 7px 5px 7px 5px;
 }
 
 #spot1 {
 	border: 1px solid black;
-	margin: 5px 5px 5px 5px;
+	
 }
 
 #spot2 {
 	border: 1px solid black;
-	margin: 5px 5px 5px 5px;
+	
+}
+
+#spot3 {
+	display: none;
+	border: 1px solid black;
+	
 }
 
 
@@ -234,6 +247,55 @@ nav {
 
   /* Responsive Navigation */
 @media only screen and (min-width: 33em){
+
+	.logo img {
+    width: 20vw; /* Adjust the logo width based on the viewport width */
+  }
+
+	#main {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	#hero {
+		grid-row: 1/2;
+		grid-column: 1/9;
+	}
+
+	#news {
+		grid-row: 2/3;
+		grid-column: 1/9;
+	}
+
+	.spotlight {
+		grid-row: 3/4;
+		grid-column: 1/9;
+	}
+
+	#join {
+		display: grid;
+		grid-row: 4/5;
+		grid-column: 1/9;
+	}
+	
+	#event {
+		grid-row: 5/6;
+		grid-column: 1/6;
+	}
+	
+	#weather {
+		grid-row: 5/6;
+		grid-column: 6/9;
+	}
+	
+
+	/* main section */
+	
+}
+
+@media only screen and (min-width: 90em)
+{
+
 	.navi {
 		display: flex;
 		flex-direction: row;
@@ -250,13 +312,10 @@ nav {
 	.navi li:first-child {
 		display: none;
 	}
-
 	.logo img {
-    width: 20vw; /* Adjust the logo width based on the viewport width */
+    width: 50vw; /* Adjust the logo width based on the viewport width */
   }
 
-	/* main section */
-	
 	#main {
 		transition: margin-left 0.5s;
 		padding: 16px;
@@ -292,13 +351,9 @@ nav {
 		grid-row: 1/4;
 		grid-column: 3/4;
 	}
-	
-}
 
-@media only screen and (min-width: 90em){
-
-	.logo img {
-    width: 50vw; /* Adjust the logo width based on the viewport width */
-  }
+	#spot3 {
+		display: grid;
+	}
   
 }
