@@ -10,13 +10,13 @@ header{
 	width: 100vw;
   display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 35px;
+	grid-template-rows: 1fr 1fr 50px;
   align-items: center;
 }
 
 .logo {
 	grid-row: 1/2;
-	grid-column: 2/3;
+	grid-column: 1/2;
 	justify-self: center;
 	text-align: center;
 }
@@ -28,8 +28,8 @@ header{
 }
 
 .headings {
-	grid-row: 2/3;
-	grid-column: 1/4;
+	grid-row: 1/2;
+	grid-column: 2/3;
 	display: flex;
 	flex-direction: column;
 	margin-left: 0.5rem;
@@ -63,30 +63,32 @@ header{
 #datefield {
 grid-row: 3/4;
 grid-column: 1/4;
-padding: 2px;
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 5px;
 border: 2px solid white;
 color: white;
-justify-self: center;
-align-self: center;
-font-size: 20px;
+background-color: #4e524f;
+font-size: 3vw;
+text-align: center;
 }
 
 /* Navigation */
+
 #navcon {
-	display: flex;
-	align-items: center;
+	grid-row: 1/2;
+	grid-column: 3/4;
 }
 
 .hamburger {
   display: flex;
   align-items: center;
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 }
 
 nav {
-	margin: 0 auto;
-	max-width: 760px;
-	padding: 15px 15px 15px 15px
+	padding: 15px;
 }
 
 .navi {
@@ -95,6 +97,7 @@ nav {
 	margin: 0;
 	display: flex;
 	background-color: #3B5E45;
+	justify-content: flex-end;
 }
 
 .navi li {
@@ -178,7 +181,6 @@ nav {
 	margin-right: 240px;
 }
 
-
  /* main section */
 
 #main {
@@ -245,13 +247,27 @@ nav {
 	
 }
 
-
   /* Responsive Navigation */
 @media only screen and (min-width: 33em){
 
 	.logo img {
     width: 20vw; /* Adjust the logo width based on the viewport width */
   }
+
+	#datefield {
+		grid-row: 3/4;
+		grid-column: 1/4;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 2px solid white;
+		color: white;
+		background-color: #4e524f;
+		font-size: 1.5vw;
+		text-align: center;
+		}
+		
 
 	#main {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -294,17 +310,30 @@ nav {
 	
 }
 
-@media only screen and (min-width: 90em)
+@media only screen and (min-width: 78em)
 {
 
+	nav {
+		margin: 0 auto;
+		max-width: 760px;
+		padding: 15px 15px 15px 15px
+	}
+
 	.navi {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 		display: flex;
 		flex-direction: row;
+		background-color: #3B5E45;
 	}
+	
 	.navi li {
 		display: block;
 		flex: 1 1 100%;
+		padding: 10px 10px 10px 10px;
 	}
+
 	.navi li a {
 		color: white;
 		text-align: center;
@@ -313,9 +342,45 @@ nav {
 	.navi li:first-child {
 		display: none;
 	}
+	
+	.navi a {
+		display: flex;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	.navi a:hover {
+		color: #000;
+		background-color: #fff;
+		font-weight: 700;
+	}
+	
+	.navi.responsive {
+		flex-direction: column;
+	}
+	
+	.navi.responsive li {
+		display: block;
+		margin: 10px 0;
+	}
+
 	.logo img {
     width: 50vw; /* Adjust the logo width based on the viewport width */
   }
+
+	#datefield {
+		grid-row: 3/4;
+		grid-column: 1/4;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 15px;
+		border: 2px solid white;
+		color: white;
+		background-color: #4e524f;
+		font-size: 1.3vw;
+		text-align: center;
+		}
 
 	#main {
 		transition: margin-left 0.5s;
