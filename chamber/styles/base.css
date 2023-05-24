@@ -19,6 +19,7 @@ header{
 	grid-column: 1/2;
 	justify-self: center;
 	text-align: center;
+	transform: scale(0.8);
 }
 
 .logo img {
@@ -39,21 +40,23 @@ header{
 }
 
 .headings h1 {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin: 0;
 }
 
 .headings h2 {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin: 0;
 }
 
 /* Social media */
 
 .social {
-	margin-right: 1.5rem;
-	grid-row: 1/2;
-	grid-column: 3/4;
+	grid-row: 2/3;
+	grid-column: 1/2;
+	font-size: 16px;
+	transform: scale(0.8);
+
 }
 
 #linkedin {
@@ -79,16 +82,20 @@ text-align: center;
 #navcon {
 	grid-row: 1/2;
 	grid-column: 3/4;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 }
 
 .hamburger {
   display: flex;
   align-items: center;
-	padding: 10px;
+	padding: 7px;
+	border: 1px solid white;
 }
 
 nav {
-	padding: 15px;
+	padding: 5px;
+	justify-self: center;
 }
 
 .navi {
@@ -102,7 +109,7 @@ nav {
 
 .navi li {
 	display: none;
-	padding: 10px 10px 10px 10px;
+	padding: 5px;
 }
 
 .navi li:first-child {
@@ -169,7 +176,7 @@ nav {
 
  /* Specail are for JS Nav movment */
 
- #main.pushed {
+#main.pushed {
   margin-right: 240px; 
 }
 
@@ -217,6 +224,7 @@ nav {
 #join {
 	display: none;
 }
+
 #news {
 	grid-row: 4/5;
 	grid-column: 1/2;
@@ -233,26 +241,70 @@ nav {
 
 #spot1 {
 	border: 1px solid black;
-	
 }
 
 #spot2 {
 	border: 1px solid black;
-	
 }
 
 #spot3 {
 	display: none;
 	border: 1px solid black;
-	
 }
+
+footer{
+  background-color: #3B5E45;
+	width: 100vw;
+	text-align: center;
+}
+
+#footer-logo {
+	transform: scale(1);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#footer-logo img {
+	width: 100%;
+	max-width: 250px; /* Set a maximum width for the logo */
+	height: auto;
+}
+
+.footer-headings {
+	color: white;
+	display: inline-block;
+  text-align: left;
+	margin-right: 5px;
+  margin-left: 20px; /* Adjust the margin as needed */
+	vertical-align: middle;
+}
+
+.footer-headings p {
+	margin: 2px;
+}
+
+#loc {
+	color: white;
+}
+
+#base-footer {
+	color: white;
+	text-align: center;
+}
+
 
   /* Responsive Navigation */
 @media only screen and (min-width: 33em){
 
+	
+
 	.logo img {
     width: 20vw; /* Adjust the logo width based on the viewport width */
   }
+
+	nav {
+		grid-column: 2/3;
+	}
 
 	#datefield {
 		grid-row: 3/4;
@@ -267,6 +319,21 @@ nav {
 		font-size: 1.5vw;
 		text-align: center;
 		}
+
+	.social {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		justify-self: center;
+		margin-right: 25px;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+	
+	.headings h2 {
+		font-size: 2rem;
+	}
 		
 
 	#main {
@@ -316,22 +383,21 @@ nav {
 	nav {
 		margin: 0 auto;
 		max-width: 760px;
-		padding: 15px 15px 15px 15px
+		padding: 10px;
 	}
 
 	.navi {
 		list-style: none;
-		padding: 0;
 		margin: 0;
 		display: flex;
 		flex-direction: row;
 		background-color: #3B5E45;
+		font-size: 1.2rem;
 	}
 	
 	.navi li {
 		display: block;
 		flex: 1 1 100%;
-		padding: 10px 10px 10px 10px;
 	}
 
 	.navi li a {
@@ -381,6 +447,14 @@ nav {
 		font-size: 1.3vw;
 		text-align: center;
 		}
+
+	.headings h1 {
+			font-size: 3rem;
+	}
+		
+	.headings h2 {
+			font-size: 3rem;
+	}
 
 	#main {
 		transition: margin-left 0.5s;
