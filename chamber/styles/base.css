@@ -499,12 +499,27 @@ footer{
 		grid-column: 2/3;
 	}
 	.spotlight {
+		display: grid;
 		grid-row: 1/4;
 		grid-column: 3/4;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	#spot1 {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	#spot2 {
+		grid-row: 2/3;
+		grid-column: 1/2;
 	}
 
 	#spot3 {
 		display: grid;
+		grid-row: 3/4;
+		grid-column: 1/2;
 	}
   
 }
