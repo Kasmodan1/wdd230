@@ -358,7 +358,6 @@ footer{
 		grid-row: 3/4;
 		grid-column: 1/4;
 		display: block;
-		width: 100%;
 		padding: 10px;
 		margin-bottom: 10px;
 		border: 2px solid white;
@@ -507,7 +506,6 @@ footer{
 		grid-row: 3/4;
 		grid-column: 1/4;
 		display: block;
-		width: 100%;
 		padding: 10px;
 		margin-bottom: 15px;
 		border: 2px solid white;
