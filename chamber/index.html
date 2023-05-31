@@ -23,7 +23,7 @@
         <ul class="navi">
           <li><a class="hamburger" href="#">&#9776; Menu</a></li>
           <li><a  href="index.html">Home</a></li>
-          <li><a  href="#">Discover</a></li>
+          <li><a  href="discover.html">Discover</a></li>
           <li><a  href="#">Directory</a></li>
           <li><a  href="#">Join</a></li>
           <li><a  href="#">Contact Us</a></li>
@@ -33,7 +33,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">Discover</a>
+            <a href="discover.html">Discover</a>
             <a href="#">Directory</a>
             <a href="#">Join</a>
             <a href="#">Contact Us</a>
@@ -77,8 +77,16 @@
     </div>
     <div id="weather">
       <section>
-        <h1>weather</h1>
-        <h4>Say somthing here</h4>
+        <h1>Grants Pass Weather</h1>
+  
+        <label for="temperature">Temperature (°F):</label>
+        <span id="temperatureValue"></span>
+        
+        <label for="windSpeed">Wind Speed (mph):</label>
+        <span id="windSpeedValue"></span>
+        
+        <label for="windchill">Wind Chill:</label>
+        <div id="windChillResult"></div>
       </section>
     </div>
     <div id="join">
@@ -133,5 +141,6 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/dates.js"></script>
 <script src="scripts/banner.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
