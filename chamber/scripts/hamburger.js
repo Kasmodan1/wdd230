@@ -27,8 +27,8 @@ function closeNav() {
 }
 
 // This is to get the date displayed ***********
-const datefield = document.querySelector("#datefield");
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-datefield.textContent = fulldate;
+//const datefield = document.querySelector("#datefield");
+//const now = new Date();
+//const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+//datefield.textContent = fulldate;
 

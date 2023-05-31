@@ -9,7 +9,26 @@ html {
   display: none;
 }
 
+:is(header) > #banner {
+	display: block;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	background-color: #87AE73;
+	font-size: small;
+	text-align: center;
+	/* Add your additional styling for the banner in the header grid */
+}
+
+
 /*header */
+
+.header-banner-days {
+  grid-template-rows: 1fr 50px 50px; /* Update the grid template for Tuesday and Wednesday */
+}
+
+.header-banner-days  #datefield {
+	grid-row: 3/4;
+}
 
 header{
   background-color: #3B5E45;
@@ -354,24 +373,18 @@ footer{
 	text-align: center;
 }
 
-/* Styling for the banner on Tuesday and Wednesday */
-@media screen and (min-width: 33em) {
-  /* Adjust the screen width value (768px) to match your design */
-  /* Apply the styling only for screens wider than the specified width */
-
-  /* Tuesday (2) and Wednesday (3) */
-  :is(header) > #banner {
-    display: block;
-		
-		
-    /* Add your additional styling for the banner in the header grid */
-  }
-}
-
-
   /* Responsive Navigation */
 @media only screen and (min-width: 33em){
 
+	:is(header) > #banner {
+		display: block;
+		grid-column: 1/4;
+		grid-row: 2/3;
+		background-color: #87AE73;
+		font-size: large;
+		text-align: center;
+		/* Add your additional styling for the banner in the header grid */
+	}
 	
 
 	.logo img {
