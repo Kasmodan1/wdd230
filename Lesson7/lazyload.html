@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commerce Website">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Lazy image</title>
+</head>
+<body>
+  <h1>Lazy Load Images</h1>
+ 
+  <div id="image-container">
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/castle.jpg" alt="Image 1">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/coloradosouthfork.webp" alt="Image 2">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/forrestfalls.jpg" alt="Image 3">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/hickorygorge.jpg" alt="Image 4">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/lepard.webp" alt="Image 5">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/market.jpg" alt="Image 6">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/multnomahfalls.webp" alt="Image 7">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/pup.jpg" alt="Image 8">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/shopecreekwaterfall.jpg" alt="Image 9">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images/Cathedral.jpg" alt="Image 10">
+    </picture>
+    <picture>
+      <div class="placeholder-image" data-src="images/placeholder.png">
+        <div class="placeholder-text">Placeholder</div>
+      </div>
+      <img class="lazy-image" data-src="images\shopecreekwestcrossing.jpg" alt="Image 11">
+    </picture>
+ </div>
+  <footer>
+    <footer id="footer">
+      <div id="base-footer">
+        <p>&copy;<span id="year"></span> .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
+      </div>
+    </footer>
+  <script src="scripts/lazyload.js"></script>
+  <script src="scripts/lastupdate.js" defer></script>
+  </footer>
+</body>
+</html>
