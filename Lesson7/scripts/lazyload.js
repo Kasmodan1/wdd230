@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         newImage.onload = () => {
           img.setAttribute('src', src);
           img.classList.add('loaded');
-          
+
           // Hide the placeholder image
           const placeholder = img.previousElementSibling;
           if (placeholder && placeholder.classList.contains('placeholder-image')) {

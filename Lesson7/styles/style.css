@@ -43,9 +43,9 @@ h1 {
   height: 400px;
   position: relative;
   background-color: #eee;
-  transition: opacity 0.4s, filter 0.s;
+  transition: opacity 1s, filter 1s;
   opacity: 0;
-  filter: blur(0.3em);
+  filter: blur(10px);
 }
 
 .lazy-image.loaded {
