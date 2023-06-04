@@ -6,17 +6,26 @@ const closeMenu = document.querySelector(".closebtn");
 hambutton.addEventListener("click", openNav, false);
 closeMenu.addEventListener("click", closeNav, false);
 
-// ToggleMenu fuction  **********************
+// ToggleMenu function  **********************
 function toggleMenu() {
   navigation.classList.toggle("responsive");
+
 }
 
-//Side Nav overlay fuctions ******************
+// Join Chambers button function
+function buttonClick() {
+  // point it to the join.html page
+  window.location.href = "join.html";
+
+}
+
+//Side Nav overlay functions ******************
 function openNav() {
   document.getElementById("mySidenav").style.width = "240px";
   document.getElementById("main").classList.add("pushed");
   document.getElementById("header").classList.add("pushed");
   document.getElementById("footer").classList.add("pushed");
+
 }
   
 function closeNav() {
@@ -24,6 +33,7 @@ function closeNav() {
   document.getElementById("main").classList.remove("pushed");
   document.getElementById("header").classList.remove("pushed");
   document.getElementById("footer").classList.remove("pushed");
+
 }
 
 // This is to get the date displayed ***********

@@ -100,8 +100,7 @@ header{
 grid-row: 2/3;
 grid-column: 1/4;
 display: block;
-padding: 10px;
-margin-bottom: 5px;
+padding: 18px;
 border: 2px solid white;
 color: white;
 background-color: #4e524f;
@@ -347,6 +346,10 @@ h1 {
 	background-color: #87AE73;
 }
 
+.hero-title:active {
+	transform: translate(-52%, -52%);
+}
+
 .welcome-title {
 	position: absolute;
   top: 10%;
@@ -522,8 +525,7 @@ footer{
 		grid-row: 3/4;
 		grid-column: 1/4;
 		display: block;
-		padding: 10px;
-		margin-bottom: 10px;
+		padding: 18px;
 		border: 2px solid white;
 		color: white;
 		background-color: #4e524f;
@@ -670,8 +672,7 @@ footer{
 		grid-row: 3/4;
 		grid-column: 1/4;
 		display: block;
-		padding: 10px;
-		margin-bottom: 15px;
+		padding: 18px;
 		border: 2px solid white;
 		color: white;
 		background-color: #4e524f;
