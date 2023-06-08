@@ -1,0 +1,50 @@
+html {
+    font-size: 16px;
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid hsla(0,0%,20%,.8);
+	box-shadow: 0 0 10px hsl(0,0%,50%);
+	border-collapse: collapse;
+}
+
+caption {
+    margin: 1px;
+    padding: 10px;
+    caption-side: bottom;
+	color: rgb(38, 52, 115);
+	font-size: 18px;
+}
+
+tr:first-child th, .highlight {
+	background-color: rgb(38, 52, 115);
+	color: hsla(0,0%,100%,1);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid hsla(0,0%,33%,.3);
+}
+
+th {
+	background-color: hsla(241, 50%, 30%, 0.5);
+	font-size: x-large;
+}
+
+td {
+	text-align: center;
+    font-size: larger;
+}
+
+.heading {
+    font: bold;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: hsl(0, 0%, 93%, 1);
+}
