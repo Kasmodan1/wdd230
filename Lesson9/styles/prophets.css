@@ -1,0 +1,37 @@
+body {
+  background-color: #A87C57;
+  font-family: Arial, sans-serif;
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #5783A8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #000000;
+}
