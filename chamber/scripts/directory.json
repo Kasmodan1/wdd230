@@ -8,7 +8,7 @@
       "zipcode": "97526",
       "phone": "(555) 123-4567",
       "website": "https://www.abcrestaurant.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/abcrestaurantlogo.webp",
       "membershiplevel": 4
     },
     {
