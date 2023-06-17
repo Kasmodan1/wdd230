@@ -35,10 +35,17 @@ const displayDirectory = (businesses) => {
     phone.classList.add('directoryp');
     phone.textContent = 'Phone: ' + business.phone;
 
+    let website = document.createElement('a');
+    website.classList.add('directoryp');
+    website.setAttribute('href', business.website);
+    website.setAttribute('target', '_blank');
+    website.textContent = business.website.replace('https://', '');
+
     card.appendChild(h2);
     card.appendChild(image);
     card.appendChild(address);
     card.appendChild(phone);
+    card.appendChild(website);
 
     cards.appendChild(card);
   });
