@@ -500,7 +500,7 @@ footer{
 
 /* ######################## Discovery Page ##################### */
 
-#directorybody {
+.directorybody {
   background-color: #A87C57;
   font-family: Arial, sans-serif;
 }
@@ -514,7 +514,7 @@ div.cards {
   margin: 20px;
 }
 
-#directorysection {
+.directorysection {
   background-color: #5783A8;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -522,19 +522,19 @@ div.cards {
   text-align: center;
 }
 
-#directoryh2 {
+.directoryh2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #000000;
 }
 
-#directoryimg {
+.directoryimg {
 	display: block;
   border-radius: 8px;
   margin: 0 auto;
 }
 
-#directoryp {
+.directoryp {
   font-size: 16px;
   margin-bottom: 8px;
   color: #000000;

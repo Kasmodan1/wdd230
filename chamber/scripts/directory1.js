@@ -43,3 +43,4 @@ const displayDirectory = (businesses) => {
     cards.appendChild(card);
   });
 };
+
