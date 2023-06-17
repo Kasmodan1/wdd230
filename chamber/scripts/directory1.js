@@ -1,7 +1,7 @@
-const src = 'directory.json';
+const url = 'https://github.com/Kasmodan1/wdd230/blob/main/chamber/scripts/directory.json';
 
-async function getDirectoryData(src) {
-  const response = await fetch(src);
+async function getDirectoryData(url) {
+  const response = await fetch(url);
   const data = await response.json();
   displayDirectory(data.businesses);
 }
