@@ -24,8 +24,8 @@ const displayDirectory = (businesses) => {
     image.setAttribute('src', business.image);
     image.setAttribute('alt', 'Image of ' + business.name);
     image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '340');
-    image.setAttribute('height', '440');
+    image.setAttribute('width', '300');
+    image.setAttribute('height', '200');
 
     let address = document.createElement('p');
     address.classList.add('directoryp');
