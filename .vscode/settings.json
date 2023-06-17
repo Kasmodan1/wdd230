@@ -8,9 +8,11 @@
     "headtitle",
     "imageurl",
     "lastname",
+    "membershiplevel",
     "navcon",
     "navi",
     "sidenav",
-    "Wildwest"
+    "Wildwest",
+    "zipcode"
   ]
 }
