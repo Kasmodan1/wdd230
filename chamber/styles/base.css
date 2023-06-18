@@ -511,7 +511,8 @@ footer{
 /* ######################################### Discovery Page ################################################## */
 
 .directorybody {
-  background-color: #435E3B;
+	padding: 10px;
+  background-color: #5D8BA2;
   font-family: Arial, sans-serif;
 }
 
