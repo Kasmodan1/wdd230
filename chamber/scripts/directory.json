@@ -19,7 +19,7 @@
       "zipcode": "97527",
       "phone": "(555) 987-6543",
       "website": "https://www.xyzstore.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/xyzstorelogo.webp",
       "membershiplevel": 1
     },
     {
@@ -78,13 +78,13 @@
       "membershiplevel": 2
     },
     {
-      "name": "Grants Pass Family Dentistry",
+      "name": "Grants Pass Dental",
       "address": "678 Oak St",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97527",
       "phone": "(555) 789-0123",
-      "website": "https://www.grantspassdentistry.com",
+      "website": "https://www.grantspassdental.com",
       "image": "/images/name",
       "membershiplevel": 4
     },
@@ -122,13 +122,13 @@
       "membershiplevel": 3
     },
     {
-      "name": "Grants Pass Bookstore",
+      "name": "Oregon Books & Games",
       "address": "567 Pine Ave",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97526",
       "phone": "(555) 789-1234",
-      "website": "https://www.grantspassbookstore.com",
+      "website": "https://www.oregonbooksngames.com",
       "image": "/images/name",
       "membershiplevel": 2
     },
@@ -166,7 +166,7 @@
       "membershiplevel": 1
     },
     {
-      "name": "Grants Pass Yoga Studio",
+      "name": "Blissful Being Wellness, LLC",
       "address": "789 Oak Ave",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -177,18 +177,18 @@
       "membershiplevel": 6
     },
     {
-      "name": "Wilderness Outdoor Gear",
+      "name": "Wilderness Survival Gear",
       "address": "234 Elm St",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97527",
       "phone": "(555) 789-0123",
-      "website": "https://www.wildernessoutdoorgear.com",
+      "website": "https://www.wildernessurvivalgear.com",
       "image": "/images/name",
       "membershiplevel": 4
     },
     {
-      "name": "Grants Pass Pet Grooming",
+      "name": "Purr Fect Pet Grooming",
       "address": "567 Pine Ave",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -232,13 +232,13 @@
       "membershiplevel": 6
     },
     {
-      "name": "Grants Pass Auto Repair",
+      "name": "Kellys Auto Repair",
       "address": "901 Elm Ave",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97526",
       "phone": "(555) 901-2345",
-      "website": "https://www.grantspassautorepair.com",
+      "website": "https://www.kellyautorepair.com",
       "image": "/images/name",
       "membershiplevel": 5
     },
@@ -276,7 +276,7 @@
       "membershiplevel": 2
     },
     {
-      "name": "Grants Pass Sports Shop",
+      "name": "SHOOTING.ORG",
       "address": "345 River Ave",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -298,7 +298,7 @@
       "membershiplevel": 3
     },
     {
-      "name": "Grants Pass Adventure Tours",
+      "name": "Hellgate Jetboat Excursions",
       "address": "901 Elm Ave",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -309,7 +309,7 @@
       "membershiplevel": 2
     },
     {
-      "name": "Rustic Cabin Rentals",
+      "name": "Mountain Top Cabin Rentals",
       "address": "234 Pine St",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -320,7 +320,7 @@
       "membershiplevel": 2
     },
     {
-      "name": "Grants Pass Gymnastics",
+      "name": "Motion Matrix",
       "address": "567 Spruce Ave",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -331,7 +331,7 @@
       "membershiplevel": 3
     },
     {
-      "name": "Healthy Plate Bistro",
+      "name": "Plate Bistro",
       "address": "890 Maple Rd",
       "city": "Grants Pass",
       "state": "Oregon",
@@ -342,7 +342,7 @@
       "membershiplevel": 1
     },
     {
-      "name": "Grants Pass Pet Boarding",
+      "name": "Canine Club",
       "address": "345 River Ave",
       "city": "Grants Pass",
       "state": "Oregon",
