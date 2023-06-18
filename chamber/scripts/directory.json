@@ -30,7 +30,7 @@
       "zipcode": "97526",
       "phone": "(555) 456-7890",
       "website": "https://www.grantspasspharmacy.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/gppharmacylogo.webp",
       "membershiplevel": 3
     },
     {
@@ -41,7 +41,7 @@
       "zipcode": "97526",
       "phone": "(555) 234-5678",
       "website": "https://www.sunrisecoffee.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/sunrisecoffeelogo.webp",
       "membershiplevel": 3
     },
     {
@@ -52,7 +52,7 @@
       "zipcode": "97527",
       "phone": "(555) 678-9012",
       "website": "https://www.greenthumbnursery.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/greenthumblogo.webp",
       "membershiplevel": 2
     },
     {
@@ -63,7 +63,7 @@
       "zipcode": "97526",
       "phone": "(555) 901-2345",
       "website": "https://www.gpmuseum.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/grantspassMofAlogo.webp",
       "membershiplevel": 2
     },
     {
@@ -74,7 +74,7 @@
       "zipcode": "97526",
       "phone": "(555) 345-6789",
       "website": "https://www.riverfrontbakery.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/riverfrontlogo.webp",
       "membershiplevel": 2
     },
     {
@@ -85,7 +85,7 @@
       "zipcode": "97527",
       "phone": "(555) 789-0123",
       "website": "https://www.grantspassdental.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/gpdentallogo.webp",
       "membershiplevel": 4
     },
     {
@@ -96,7 +96,7 @@
       "zipcode": "97526",
       "phone": "(555) 890-1234",
       "website": "https://www.naturespantry.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/naturespantrylogo.webp",
       "membershiplevel": 1
     },
     {
@@ -107,7 +107,7 @@
       "zipcode": "97527",
       "phone": "(555) 012-3456",
       "website": "https://www.gpautorepair.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/gpautorepairlogo.webp",
       "membershiplevel": 3
     },
     {
@@ -118,7 +118,7 @@
       "zipcode": "97527",
       "phone": "(555) 456-7890",
       "website": "https://www.theflowershop.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/flowershoplogo.webp",
       "membershiplevel": 3
     },
     {
@@ -129,7 +129,7 @@
       "zipcode": "97526",
       "phone": "(555) 789-1234",
       "website": "https://www.oregonbooksngames.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/Gpbookstorelogo.webp",
       "membershiplevel": 2
     },
     {
@@ -140,18 +140,18 @@
       "zipcode": "97527",
       "phone": "(555) 012-3456",
       "website": "https://www.healthybitescafe.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/healthybitelogo.webp",
       "membershiplevel": 1
     },
     {
-      "name": "Grants Pass Fitness Center",
+      "name": "Rouge Valley Fitness Center",
       "address": "123 Elm Ave",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97526",
       "phone": "(555) 234-5678",
       "website": "https://www.grantspassfitness.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/rougevalyfitnesslogo.webp",
       "membershiplevel": 5
     },
     {
@@ -162,7 +162,7 @@
       "zipcode": "97527",
       "phone": "(555) 345-6789",
       "website": "https://www.artistichairsalon.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/artisticlogo.webp",
       "membershiplevel": 1
     },
     {
@@ -173,7 +173,7 @@
       "zipcode": "97526",
       "phone": "(555) 456-7890",
       "website": "https://www.grantspassyoga.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/yogalogo.webp",
       "membershiplevel": 6
     },
     {
@@ -184,7 +184,7 @@
       "zipcode": "97527",
       "phone": "(555) 789-0123",
       "website": "https://www.wildernessurvivalgear.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/wildernesslogo.webp",
       "membershiplevel": 4
     },
     {
@@ -195,7 +195,7 @@
       "zipcode": "97526",
       "phone": "(555) 012-3456",
       "website": "https://www.grantspasspetgrooming.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/petgroominglogo.webp",
       "membershiplevel": 3
     },
     {
@@ -206,7 +206,7 @@
       "zipcode": "97527",
       "phone": "(555) 234-5678",
       "website": "https://www.thecoffeehouse.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/cofeehouselogo.webp",
       "membershiplevel": 2
     },
     {
@@ -217,7 +217,7 @@
       "zipcode": "97526",
       "phone": "(555) 345-6789",
       "website": "https://www.grantspassflorist.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/gpfloristlogo.webp",
       "membershiplevel": 1
     },
     {
@@ -228,7 +228,7 @@
       "zipcode": "97527",
       "phone": "(555) 678-9012",
       "website": "https://www.healthyhabitswellness.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/healthyhabitslogo.webp",
       "membershiplevel": 6
     },
     {
@@ -239,7 +239,7 @@
       "zipcode": "97526",
       "phone": "(555) 901-2345",
       "website": "https://www.kellyautorepair.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/kellysautologo.webp",
       "membershiplevel": 5
     },
     {
@@ -250,18 +250,18 @@
       "zipcode": "97527",
       "phone": "(555) 012-3456",
       "website": "https://www.riversidebnb.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/riversideinnlogo.webp",
       "membershiplevel": 3
     },
     {
-      "name": "Grants Pass Art Supply",
+      "name": "Central Art Supply",
       "address": "567 Spruce Ave",
       "city": "Grants Pass",
       "state": "Oregon",
       "zipcode": "97526",
       "phone": "(555) 234-5678",
       "website": "https://www.grantspassartsupply.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/centralartlogo.webp",
       "membershiplevel": 4
     },
     {
@@ -272,7 +272,7 @@
       "zipcode": "97527",
       "phone": "(555) 345-6789",
       "website": "https://www.healthysmilesclinic.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/healthysmileslogo.webp",
       "membershiplevel": 2
     },
     {
@@ -283,7 +283,7 @@
       "zipcode": "97526",
       "phone": "(555) 456-7890",
       "website": "https://www.grantspasssports.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/gpsportsshoplogo.webp",
       "membershiplevel": 1
     },
     {
@@ -294,7 +294,7 @@
       "zipcode": "97527",
       "phone": "(555) 901-2345",
       "website": "https://www.theteahouse.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/thteahouselogo.webp",
       "membershiplevel": 3
     },
     {
@@ -305,7 +305,7 @@
       "zipcode": "97526",
       "phone": "(555) 012-3456",
       "website": "https://www.grantspassadventures.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/hellgatelogo.webp",
       "membershiplevel": 2
     },
     {
@@ -316,7 +316,7 @@
       "zipcode": "97527",
       "phone": "(555) 234-5678",
       "website": "https://www.rusticcabinrentals.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/mountaintopcabinlogo.webp",
       "membershiplevel": 2
     },
     {
@@ -327,7 +327,7 @@
       "zipcode": "97526",
       "phone": "(555) 345-6789",
       "website": "https://www.grantspassgymnastics.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/motonmatrixlogo.webp",
       "membershiplevel": 3
     },
     {
@@ -338,7 +338,7 @@
       "zipcode": "97527",
       "phone": "(555) 456-7890",
       "website": "https://www.healthyplatebistro.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/platelogo.webp",
       "membershiplevel": 1
     },
     {
@@ -349,7 +349,7 @@
       "zipcode": "97526",
       "phone": "(555) 678-9012",
       "website": "https://www.grantspasspetboarding.com",
-      "image": "/images/name",
+      "image": "https://raw.githubusercontent.com/Kasmodan1/wdd230/main/chamber/images/directoryimages/canineboardingclub.webp",
       "membershiplevel": 2
     }
   ]
