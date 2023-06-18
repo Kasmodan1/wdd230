@@ -9,6 +9,10 @@ html {
   display: none;
 }
 
+body{
+	background-color: #3B5E45;
+}
+
 :is(header) > #banner {
 	display: block;
 	grid-column: 1/4;
@@ -280,7 +284,13 @@ h1 {
 
  /* main section */
 
+ .mainclass {
+	background-color: white;
+	padding: 10px;
+ }
+
 #main {
+	background-color: white;
   transition: margin-left 0.5s;
   padding: 10px;
 	margin-left: 3px;
@@ -498,10 +508,10 @@ footer{
 	text-align: center;
 }
 
-/* ######################## Discovery Page ##################### */
+/* ######################################### Discovery Page ################################################## */
 
 .directorybody {
-  background-color: #A87C57;
+  background-color: #435E3B;
   font-family: Arial, sans-serif;
 }
 
@@ -515,7 +525,7 @@ div.cards {
 }
 
 .directorysection {
-  background-color: #5783A8;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -593,6 +603,7 @@ div.cards {
 		
 
 	#main {
+		background-color: white;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -732,6 +743,7 @@ div.cards {
 	}
 
 	#main {
+		background-color: white;
 		transition: margin-left 0.5s;
 		padding: 16px;
 		margin-left: 0;
