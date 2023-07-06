@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <!--<link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-sha512-hash...==" crossorigin="anonymous" />
     <title>Directory Page</title>
 </head>
 <body>
@@ -59,7 +60,11 @@
     	<span id="datefield"></span>
 	</header>
     <main class="directorybody">
-        <div class="cards"></div>
+				<div class="toggle-button-container">
+						<button id="toggleButton" onclick="toggleDisplayMode()"><i class="fas fa-th-large"></i></button>
+				</div>
+      	<div class="cards"></div>
+				<ul class="list"></ul>
     </main>
     <footer id="footer">
         <div id="footer-logo">
@@ -81,7 +86,7 @@
 <script src="scripts/dates.js" defer></script>
 <script src="scripts/banner.js" defer></script>
 <script src="scripts/lazyload.js" defer></script>
-<script src="scripts/timeindays.js" defer></script>
+<!-- <script src="scripts/timeindays.js" defer></script> -->
 <script src="scripts/directory1.js"></script>
 </body>
 </html>

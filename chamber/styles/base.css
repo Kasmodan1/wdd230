@@ -551,6 +551,43 @@ div.cards {
   color: #000000;
 }
 
+list {
+  display: none; /* Initially hide the list */
+  list-style: none;
+  padding: 0;
+}
+
+.list .directorylistitem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.list .directorylistname {
+  font-weight: bold;
+}
+
+.list .directorylistaddress,
+.list .directorylistphone,
+.list .directorylistwebsite,
+.list .directorylistmembership {
+  display: block;
+  margin-top: 5px;
+}
+
+.list .directorylistwebsite {
+  color: blue;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-basis: 20%; /* Adjust the width as needed */
+  padding: 5px;
+}
 
 
 
