@@ -421,7 +421,6 @@ h1 {
 
 input[type="text"] {
   padding: 10px;
-  margin-right: 10px;
   border-radius: 5px;
   border: none;
 }
@@ -516,38 +515,29 @@ footer{
   font-family: Arial, sans-serif;
 }
 
-/* Form Styles */
-form {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column */
-  max-width: 100%;/* Adjust the width as needed */
-  margin: 0;
-}
-
 .join-main form fieldset {
+  max-width: 250px;
 	margin: 1rem 2%;
 	padding: 2% 1rem;
 }
 
-.form-label {
-  margin-top: 20px;
-}
-
-.form-input {
-  margin-bottom: 20px;
-}
-
-.membership-details h3 {
-  margin-top: 0;
-}
-
-form {
-  grid-template-columns: 1fr; /* Revert to single column for small screens */
+.membership-details {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .membership-info {
-  grid-template-columns: 1fr; /* Revert to single column for small screens */
- }
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  align-items: flex-start; /* Align to the left */
+}
+
+.membership-details {
+  flex: none; /* Reset flex value to default */
+}
 
 /* ######################################### Discovery Page ################################################## */
 

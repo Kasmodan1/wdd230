@@ -107,6 +107,82 @@
 	/* ####################################### Join Page ##########################################
 	
 	/* Membership Details Styles */
+	
+	form {
+		display: grid;
+		grid-template-columns: 1fr;
+		max-width: 100%;
+		margin: 0;
+	}
+	
+	.form-label {
+		margin-top: 20px;
+	}
+	
+	.form-input {
+		margin-bottom: 20px;
+	}
+	
+	.membership-details h3 {
+		margin-top: 0;
+	}
+	
+	form {
+		grid-template-columns: 1fr;
+	}
+	
+	.membership-info {
+		grid-template-columns: 1fr;
+	 }
+
+
+	.join-main form fieldset {
+		max-width: 100%;
+		margin: 1rem 2%;
+		padding: 2% 1rem;
+	}
+
+	#firstname {
+		margin: 5px;
+		margin-left: 50px;
+
+	}
+
+	#lastname {
+		margin: 5px;
+		margin-left: 50px;
+	}
+
+	#formemail {
+		margin: 5px;
+		margin-left: 50px;
+	}
+
+	#formemail input{
+		margin-left: 50px;
+
+	}
+
+	#formphone input{
+	
+	}
+
+
+	
+	.membership-details {
+		flex: 1; /* Take up remaining space */
+		padding: 20px;
+		background-color: #f9f9f9;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	
+	.membership-details h3 {
+		margin-top: 0;
+	}
+
+
 	.membership-info {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, responsive */
