@@ -15,7 +15,6 @@
     <title>Contact US Page</title>
 </head>
 <body>
-
   	<header id="header" class="header-banner-days">
     	<div id="banner"></div>
     	<div id="navcon">
@@ -59,42 +58,35 @@
     	</section>
     	<span id="datefield"></span>
 	</header>
-
-  <div class="container">
-    <form id="fcf-form-id" class="fcf-form-class" action="thanks.html" method="post">
-        <label for="fname" class="fcf-label">First Name</label>
-        <div class="fcf-input-group">
-            <input type="text" id="fname" name="firstname" placeholder="Your First Name.." class="fcf-form-control" required>
+    <main>
+        <div class="container">
+            <form id="fcf-form-id" class="fcf-form-class" action="thanks.html" method="post">
+                <label for="fname" class="fcf-label">First Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="fname" name="firstname" placeholder="Your First Name.." class="fcf-form-control" required>
+                </div>
+                <label for="lname" class="fcf-label">Last Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." class="fcf-form-control" required>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your Email Address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                <label for="subject" class="fcf-label">Subject</label>
+                    <div class="fcf-input-group">
+                        <textarea id="subject" name="subject" class="fcf-form-control" placeholder="Your Message ..." style="height:200px" required></textarea>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
+                </div>
+            </form>
         </div>
-        <label for="lname" class="fcf-label">Last Name</label>
-        <div class="fcf-input-group">
-            <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." class="fcf-form-control" required>
-        </div>
-        <!--<label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="usa">USA</option>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="other">Other</option>
-        </select> -->
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your Email Address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="subject" class="fcf-label">Subject</label>
-            <div class="fcf-input-group">
-                <textarea id="subject" name="subject" class="fcf-form-control" placeholder="Your Message ..." style="height:200px" required></textarea>
-            </div>
-            </div>
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
-            </div>
-        </form>
-    </div>
-
+    </main>
     <footer id="footer">
         <div id="footer-logo">
             <img src="images/logo1.png" alt="Logo Image">
@@ -110,11 +102,11 @@
             <p>&copy;<span id="year"></span> Grants Pass Chamber .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
         </div>
     </footer>
-<script src="scripts/lastupdate.js" defer></script>  
-<script src="scripts/hamburger.js" defer></script>
-<script src="scripts/dates.js" defer></script>
-<script src="scripts/banner.js" defer></script>
+<script src="scripts/lastupdate.js"></script>  
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/dates.js"></script>
+<script src="scripts/banner.js"></script>
 <script src="scripts/lazyload.js" defer></script>
-<script src="scripts/timeindays.js" defer></script>
+<script src="scripts/timeindays.js"></script>
 </body>
 </html>
