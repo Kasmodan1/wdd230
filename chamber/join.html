@@ -15,7 +15,6 @@
     <title>Join GPCC</title>
 </head>
 <body>
-
   	<header id="header" class="header-banner-days">
     	<div id="banner"></div>
     	<div id="navcon">
@@ -59,7 +58,74 @@
     	</section>
     	<span id="datefield"></span>
 	</header>
-    <main class="mainclass">
+    <main>
+        <h1>Membership Application Form</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <div>
+                    <label for="fname">First Name* required></label>
+                    <input type="text" id="fname" name="firstname" required>
+                </div>
+
+                <div>
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname" required>
+                </div>
+
+                <div>
+                    <label for="position">Business Position Title:</label>
+                    <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter at least 7 characters consisting of letters, hyphens, and spaces.">
+                </div>
+
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </div>
+
+                <div>
+                    <label for="phone">Cell Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+            <fieldset id="business-info-fieldset"></fieldset>
+                <legend>Business Information</legend>
+                <div>
+                    <label for="business">Business Name/Title*</label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+                <div>
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership">
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership - $290.00/yr</option>
+                        <option value="silver">Silver Membership - $555.00/yr</option>
+                        <option value="gold">Gold Membership - $1085.00/yr</option>
+                        <option value="platinum">Platinum Membership - $3205.00/yr</option>
+                        <option value="diamond">Diamond Membership - $5000.00/yr</option>
+                        <option value="legacy">Legacy Membership - $7500.00/yr</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="description">Business Description:</label>
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                </div>
+
+                <input type="hidden" id="datetime" name="datetime" value="">
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+        </form>
+    </main>
+
+
+
+
+
+    <main class="mainclass" id="mainclassjoin">
+        <h1>Membership Application Form</h1>
         <p>Basic Benefits for Chamber Members
             Networking Groups • Forums • Business After Hours • Chamber Committees • PROFILE Magazine Listing •
             Workshops • Legislative Advocacy • Community Connections and Business Credibility by Association •
