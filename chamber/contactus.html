@@ -58,33 +58,36 @@
     	</section>
     	<span id="datefield"></span>
 	</header>
-    <main>
+    <main class="mainclass">
         <div class="container">
-            <form id="fcf-form-id" class="fcf-form-class" action="thanks.html" method="post">
-                <label for="fname" class="fcf-label">First Name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="fname" name="firstname" placeholder="Your First Name.." class="fcf-form-control" required>
-                </div>
-                <label for="lname" class="fcf-label">Last Name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." class="fcf-form-control" required>
-                </div>
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your Email Address</label>
+            <fieldset>
+                <legend>Contact Us Form</legend>
+                <form id="fcf-form-id" class="fcf-form-class" action="thanks.html" method="post">
+                    <label for="fname" class="fcf-label">First Name</label>
                     <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        <input type="text" id="fname" name="firstname" placeholder="Your First Name.." class="fcf-form-control" required>
                     </div>
-                </div>
-                <div class="fcf-form-group">
-                <label for="subject" class="fcf-label">Subject</label>
+                    <label for="lname" class="fcf-label">Last Name</label>
                     <div class="fcf-input-group">
-                        <textarea id="subject" name="subject" class="fcf-form-control" placeholder="Your Message ..." style="height:200px" required></textarea>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." class="fcf-form-control" required>
                     </div>
-                </div>
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
-                </div>
-            </form>
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your Email Address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+                    <div class="fcf-form-group">
+                    <label for="subject" class="fcf-label">Subject</label>
+                        <div class="fcf-input-group">
+                            <textarea id="subject" name="subject" class="fcf-form-control" placeholder="Your Message ..." style="height:200px" required></textarea>
+                        </div>
+                    </div>
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
+                    </div>
+                </form>
+            </fieldset>
         </div>
     </main>
     <footer id="footer">

@@ -285,12 +285,11 @@ h1 {
  /* main section */
 
  .mainclass {
-	background-color: white;
+	background-color: #5D8BA2;
 	padding: 10px;
  }
 
 #main {
-	background-color: white;
   transition: margin-left 0.5s;
   padding: 10px;
 	margin-left: 3px;
@@ -618,4 +617,12 @@ list {
 .col {
   flex-basis: 20%; /* Adjust the width as needed */
   padding: 5px;
+}
+
+/* ################################################## Contact Us Page ################################ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
