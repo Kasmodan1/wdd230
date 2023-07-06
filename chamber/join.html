@@ -70,12 +70,6 @@
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lastname" required>
             </div>
-
-            <div>
-                <label for="position">Business Position Title:</label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter at least 7 characters consisting of letters, hyphens, and spaces.">
-            </div>
-
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required placeholder="example@example.com">
@@ -86,108 +80,120 @@
                 <input type="tel" id="phone" name="phone" required>
             </div>
 
+
+
             <div>
-                <label for="business">Business Name/Title:</label>
+                <label for="business">Business Name:</label>
                 <input type="text" id="business" name="business" required>
             </div>
-
             <div>
-                <label for="membership">Membership Level:</label>
-                <select id="membership" name="membership">
-                    <option value="np">NP Membership (Non-Profit)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                    <option value="platinum">Platinum Membership</option>
-                    <option value="diamond">Diamond Membership</option>
-                    <option value="legacy">Legacy Membership</option>
-                </select>
+                <label for="position" class="form-label">Business Title</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" title="Please enter a valid business position title (minimum 7 characters, alphabets, hyphens, and spaces only)">
             </div>
-
             <div>
                 <label for="description">Business Description:</label>
                 <textarea id="description" name="description" rows="4" cols="50"></textarea>
             </div>
 
-            <h2>Membership Level Benefits:</h2>
-            <div class="benefits">
-                <h3>Bronze Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Website Membership</li>
-                    <li>Business Directory Listing Page</li>
-                    <li>Limited to businesses with 7 or less FTE and non-profit organizations</li>
-                </ul>
+            <div>
+                <label for="membership" class="form-label">Membership Level</label>
+                <select id="membership" name="membership">
+                <option value="np">NP Membership (No Fee)</option>
+                <option value="bronze">Bronze Membership ($290.00/yr)</option>
+                <option value="silver">Silver Membership ($555.00/yr)</option>
+                <option value="gold">Gold Membership ($1085.00/yr)</option>
+                <option value="platinum">Platinum Membership ($3205.00/yr)</option>
+                <option value="diamond">Diamond Membership ($5000.00/yr)</option>
+                <option value="legacy">Legacy Membership ($7500.00/yr)</option>
+                </select>
             </div>
-
-            <div class="benefits">
-                <h3>Silver Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Website Membership</li>
-                    <li>Logo with Listing</li>
-                    <li>Additional Category Listing</li>
-                </ul>
-            </div>
-
-            <div class="benefits">
-                <h3>Gold Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Website Membership</li>
-                    <li>Logo with Listing</li>
-                    <li>Additional Category Listing</li>
-                    <li>Chamber News Newsletter Ad (Standard Size)</li>
-                </ul>
-            </div>
-
-            <div class="benefits">
-                <h3>Platinum Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Website Membership</li>
-                    <li>Logo with Listing</li>
-                    <li>2 Additional Category Listings</li>
-                    <li>Chamber News Newsletter Ad (1/4 Page Size) OR Chamber Website Standard Ad</li>
-                    <li>Four Weeks Featured in E-Newsletter</li>
-                    <li>Concerts In The Park Sponsorship</li>
-                    <li>Business Tools: Two Free uses of Chamber Boardroom, One Additional Business Listing</li>
-                    <li>Events: (4) Chamber Banquet Tickets, (3) Forum Tickets</li>
-                </ul>
-            </div>
-
-            <div class="benefits">
-                <h3>Diamond Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Website Membership</li>
-                    <li>Logo with Listing</li>
-                    <li>2 Additional Category Listings</li>
-                    <li>Chamber News Newsletter Ad (1/4 Page Size)</li>
-                    <li>Chamber Website Standard Ad</li>
-                    <li>Concerts In The Park Sponsorship</li>
-                    <li>Business Tools: Two Free uses of Chamber Boardroom, Complimentary relocation and visitor packet inserts, Multiple Business Listings</li>
-                    <li>Events: (8) Chamber Banquet Tickets, (3) Forum Tickets</li>
-                </ul>
-            </div>
-
-            <div class="benefits">
-                <h3>Legacy Membership:</h3>
-                <ul>
-                    <li>Basic Benefits</li>
-                    <li>Major Sponsor Logo and Banner Ad</li>
-                    <li>Website Membership</li>
-                    <li>2 Additional Category Listings</li>
-                    <li>Chamber News Newsletter Ad (1/4 Page Size) and Major Sponsor</li>
-                    <li>Weekly E-newsletter Sponsor</li>
-                    <li>PROFILE Magazine Major Sponsor</li>
-                    <li>Exclusive Sponsorship Opportunities</li>
-                    <li>All Major Event Recognition, (8) Chamber Banquet Tickets, (4) Forum Tickets</li>
-                    <li>Exclusive Updates from Chamber President & CEO</li>
-                    <li>Annual Recognition Event Exclusive for Legacy Partners</li>
-                    <li>Business Tools: Free use of Boardroom (when available), Complimentary relocation and visitor packet inserts</li>
-                </ul>
-            </div>
+     
+            <div class="membership-info">
+                <div id="np" class="membership-details">
+                    <h3>NP Membership</h3>
+                    <p>No fee required</p>
+                </div>
+                <div id="bronze" class="membership-details">
+                    <h3>Bronze Membership</h3>
+                    <p>$290.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Membership Website Portal</li>
+                        <li>Business Directory Listing Page</li>
+                        <li>Limited to businesses with 7 or fewer FTE and non-profit organizations</li>
+                    </ul>
+                </div>
+                <div id="silver" class="membership-details">
+                    <h3>Silver Membership</h3>
+                    <p>$555.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Membership Website Portal</li>
+                        <li>Logo with Listing</li>
+                        <li>Additional Category Listing</li>
+                    </ul>
+                </div>
+                <div id="gold" class="membership-details">
+                    <h3>Gold Membership</h3>
+                    <p>$1085.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Membership Website Portal</li>
+                        <li>Logo with Listing</li>
+                        <li>Additional Category Listing</li>
+                        <li>"Chamber News" Newsletter Ad (Standard Size)</li>
+                    </ul>
+                </div>
+                <div id="platinum" class="membership-details">
+                    <h3>Platinum Membership</h3>
+                    <p>$3205.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Membership Website Portal</li>
+                        <li>Logo with Listing</li>
+                        <li>2 Additional Category Listings</li>
+                        <li>"Chamber News" Newsletter Ad (1/4 Page Size) OR Chamber Website Standard Ad</li>
+                        <li>Four Weeks Featured in E-Newsletter</li>
+                        <li>Concerts In The Park Sponsorship</li>
+                        <li>Business Tools: Two Free uses of Chamber Boardroom, One Additional Business Listing</li>
+                        <li>Events: (4) Chamber Banquet Tickets, (3) Forum Tickets</li>
+                    </ul>
+                </div>
+                <div id="diamond" class="membership-details">
+                    <h3>Diamond Membership</h3>
+                    <p>$5000.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Membership Website Portal</li>
+                        <li>Logo with Listing</li>
+                        <li>2 Additional Category Listings</li>
+                        <li>"Chamber News" Newsletter Ad (1/4 Page Size)</li>
+                        <li>Chamber Website Standard Ad</li>
+                        <li>Concerts In The Park Sponsorship</li>
+                        <li>Business Tools: Two free uses of Boardroom, Complimentary relocation and visitor packet inserts</li>
+                        <li>Multiple Business Listings</li>
+                        <li>E-Newsletter Sponsor</li>
+                        <li>Events: (8) Chamber Banquet Tickets, (3) Forum Tickets</li>
+                    </ul>
+                </div>
+                <div id="legacy" class="membership-details">
+                    <h3>Legacy Membership</h3>
+                    <p>$7500.00/yr</p>
+                    <p>Basic Benefits, plus:</p>
+                    <ul>
+                        <li>Website: Major Sponsor Logo and Banner Ad, Membership Website Portal</li>
+                        <li>2 Additional Category Listings</li>
+                        <li>"Chamber News" Newsletter Ad (1/4 Page Size and Major Sponsor)</li>
+                        <li>Weekly E-newsletter Sponsor</li>
+                        <li>"PROFILE" Magazine Major Sponsor</li>
+                        <li>Exclusive Sponsorship Opportunities</li>
+                        <li>All Major Event Recognition, (8) Chamber Banquet Tickets, (4) Forum Tickets</li>
+                        <li>Exclusive Updates from Chamber President & CEO</li>
+                        <li>Annual Recognition Event Exclusive for Legacy Partners</li>
+                        <li>Business Tools: Free use of Boardroom (when available), Complimentary relocation and visitor packet inserts</li>
+                    </ul>
+                </div>
+              </div>
 
             <input type="hidden" id="datetime" name="datetime" value="">
 
