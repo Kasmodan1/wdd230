@@ -163,9 +163,29 @@
 
 	}
 
-	#formphone input{
-	
+	#businessname {
+		margin: 5px;
+		margin-left: 40px;
 	}
+
+	#businesstitle {
+		margin: 5px;
+		margin-left: 40px;
+	}
+
+	#businesstitle input{
+		margin-left: 20px;
+	}
+
+	#businessdescription{
+		margin: 5px;
+	}
+
+	#formmembership input{
+		margin-left: 10px;
+	}
+
+
 
 
 	
