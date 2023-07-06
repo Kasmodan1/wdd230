@@ -310,6 +310,7 @@ h1 {
 
 
 #hero, #event, #weather, #join, #news, .spotlight {
+  background-color: white;
 	border: 1px solid black;
 	border-radius: 10px;
 	margin: 5px 5px 5px 5px;
@@ -444,11 +445,13 @@ button {
 	grid-column: 1/2;
 }
 .spotlight {
+  background-color: #5D8BA2;
 	grid-row: 5/6;
 	grid-column: 1/2;
 }
 
 #spot1, #spot2, #spot3 {
+  background-color: white;
 	padding: 5px;
 	margin: 7px 5px 7px 5px;
 }
