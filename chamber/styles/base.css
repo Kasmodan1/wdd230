@@ -310,7 +310,7 @@ h1 {
 
 
 #hero, #event, #weather, #join, #news, .spotlight {
-  background-color: white;
+  background-color: #b9b9b9;
 	border: 1px solid black;
 	border-radius: 10px;
 	margin: 5px 5px 5px 5px;
@@ -373,10 +373,29 @@ h1 {
 	white-space: nowrap;
 }
 
+/* ################################# Event Tile ################################################*/
+
 #event {
 	grid-row: 2/3;
 	grid-column: 1/2;
+  padding: 10px;
 }
+
+#event-title {
+  text-align: center;
+  margin-bottom: 5px
+}
+
+#event-image-container {
+  position: relative;
+}
+
+#event-image {
+  width: 60%;
+  height: auto;
+}
+
+/* ############################################################################################### */
 
 /* Weather section */
 
@@ -451,7 +470,7 @@ button {
 }
 
 #spot1, #spot2, #spot3 {
-  background-color: white;
+  background-color: #b9b9b9;
 	padding: 5px;
 	margin: 7px 5px 7px 5px;
 }
