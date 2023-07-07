@@ -648,3 +648,9 @@ list {
   justify-content: center;
   align-items: center;
 }
+
+/* ################################################# Thanks Page ##################################### */
+
+#thankmsg {
+  font-size: 18px;
+}
