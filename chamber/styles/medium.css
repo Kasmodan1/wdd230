@@ -184,10 +184,6 @@
 		margin-left: 10px;
 	}
 
-
-
-
-	
 	.membership-details {
 		flex: 1; /* Take up remaining space */
 		padding: 20px;
@@ -200,7 +196,6 @@
 	.membership-details h3 {
 		margin-top: 0;
 	}
-
 
 	.membership-info {
 		display: grid;
