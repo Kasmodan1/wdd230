@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healthy Foods Website">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/bountifulfoods/styles/normalize.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/small.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/medium.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/large.css">
+    
+    <title>Bountiful Foods - Home</title>
+    <!-- Add your CSS and JavaScript references here -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Company Logo -->
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Bountiful Foods Logo">
+            </a>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>123 Main Street, Carlsbad, CA</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home page content -->
+        <section id="landing-section">
+            <h1>Bountiful Foods</h1>
+            <p>Specializing in organic, locally grown foods</p>
+
+            <!-- Images of fruit and produce, including specialty fruit drinks -->
+            <div class="image-gallery">
+                <!-- Add image carousel or gallery here -->
+            </div>
+
+            <!-- Summary information about the chosen coastal area -->
+            <div class="coastal-summary">
+                <h2>Explore the Southern California Coast</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ex eu elit tincidunt faucibus eget
+                    vitae ipsum.</p>
+            </div>
+
+            <!-- Call-to-action (CTA) to make your own fruit drink mix linking to Fresh page -->
+            <div class="cta-section">
+                <h2>Make Your Own Fruit Drink Mix</h2>
+                <p>Choose from a variety of fresh fruits and create your own specialty drink.</p>
+                <a href="fresh.html" class="cta-button">Get Started</a>
+            </div>
+
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="../bountifulfoods/images/facebookicon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+
+            <!-- Weather card(s) summarizing the current weather conditions for Carlsbad -->
+            <div class="weather-card">
+                <h3>Current Weather in Carlsbad</h3>
+                <p>Temperature: <span id="current-temp">--</span></p>
+                <p>Condition: <span id="condition">--</span></p>
+                <p>Humidity: <span id="humidity">--</span></p>
+                <h4>Three-Day Forecast</h4>
+                <div id="forecast">
+                  <!-- Forecast data will be added dynamically -->
+                </div>
+              </div>
+
+            <!-- Information card about the total number of specialty drinks -->
+            <div class="specialty-drinks">
+                <h3>Total Specialty Drinks Submitted</h3>
+                <p>You have submitted <span id="total-drinks">0</span> specialty drinks.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here -->
+        <div id="base-footer">
+            <p>&copy;<span id="year"></span> Bountiful Foods .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
+        </div>
+    </footer>
+    <script src="/bountifulfoods/scripts/lastupdate.js"></script>
+    <script src="/bountifulfoods/scripts/weatherapi.js"defer></script>
+</body>
+
+</html>
