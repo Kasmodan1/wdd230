@@ -1,18 +1,32 @@
-/* Header Styles */
+:root {
+  --color: rgb(63 63 63);
+}
+
+/* ### Body Section ### */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+
+/* ############ Header Section #####################*/
+
 header {
   background-color: #f8f8f8;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo img {
+  max-width: 100px;
+}
+
+/* ### Nav section ### */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo img {
-  max-width: 100px;
 }
 
 .nav-links {
@@ -39,6 +53,8 @@ header {
   color: #ff6600;
 }
 
+/* ### Contact info ### */
+
 .contact-info {
   text-align: right;
 }
@@ -47,7 +63,12 @@ header {
   margin: 0;
 }
 
-/* Social Media Icons */
+/* ###################### */
+
+/* ############ Main Section #####################*/
+
+
+/* ###Social Media Icons### */
 .social-links {
   display: flex;
   gap: 10px;
@@ -57,4 +78,80 @@ header {
 .social-icon img {
   width: 30px;
   height: 30px;
+}
+
+/* ###################### */
+
+.parallax-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-attachment: fixed;
+
+  background-image: url('/bountifulfoods/images/highrez/harvest.webp');
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.buffer {
+  width: 100%;
+  min-height: 30vh;
+  background-color: var(--color);
+}
+
+.parallax-container2 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-attachment: fixed;
+
+  background-image: url('/bountifulfoods/images/highrez/peoplepicking.webp');
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container3 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-attachment: fixed;
+
+  background-image: url('/bountifulfoods/images/highrez/orchard.webp');
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container4 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-attachment: fixed;
+
+  background-image: url('/bountifulfoods/images/highrez/fooddisplay.webp');
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
 }
