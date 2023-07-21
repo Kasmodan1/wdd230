@@ -93,13 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`);
       const currentWeatherData = await currentWeatherResponse.json();
 
-      console.log('Forecast Data:', currentWeatherData); // Add this line to log
+      //console.log('Forecast Data:', currentWeatherData); // Add this line to log
 
       // Fetch 5-day forecast data in imperial units (Fahrenheit)
       const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`);
       const forecastData = await forecastResponse.json();
 
-      console.log('Forecast Data:', forecastData); // Add this line to log
+      //console.log('Forecast Data:', forecastData); // Add this line to log
 
       // Display current weather
       displayCurrentWeather(currentWeatherData);

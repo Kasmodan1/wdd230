@@ -6,10 +6,11 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
+  min-width: 375px;
 }
 
 
-/* ############ Header Section #####################*/
+/* ################################### Header Section #####################################*/
 
 header {
   background-color: #f8f8f8;
@@ -53,6 +54,57 @@ header {
   color: #ff6600;
 }
 
+/* ### sideNav with js ### */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f149;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 205px;
+  font-size: 36px;
+  margin-left: 50px;
+	color: white;
+}
+
+ /* ### JS Nav movement ### */
+
+ #main.pushed {
+  margin-left: 240px; 
+}
+
+#header.pushed {
+	margin-left: 240px; 
+}
+
+#footer.pushed {
+	margin-left: 240px;
+}
+
 /* ### Contact info ### */
 
 .contact-info {
@@ -63,12 +115,9 @@ header {
   margin: 0;
 }
 
-/* ###################### */
+/* ################################## Main Section #######################################*/
+/* ### Social Media Icons ### */
 
-/* ############ Main Section #####################*/
-
-
-/* ###Social Media Icons### */
 .social-links {
   display: flex;
   gap: 10px;
@@ -80,7 +129,7 @@ header {
   height: 30px;
 }
 
-/* ###################### */
+/* ### Parallax section ### */
 
 .parallax-container {
   display: flex;

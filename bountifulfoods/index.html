@@ -24,12 +24,14 @@
 <body>
     <header>
         <nav class="navbar">
+            <!-- Hamburger Icon -->
+            <div class="hamburger">&#9776;</div>
             <!-- Company Logo -->
             <a href="index.html" class="logo">
                 <img src="logo.png" alt="Bountiful Foods Logo">
             </a>
-            <!-- Navigation Links -->
-            <ul class="nav-links">
+            <ul class="nav-links navi">
+                <li><a class="hamburger" href="#">&#9776; Menu</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -40,6 +42,14 @@
                 <p>Phone: (123) 456-7890</p>
             </div>
         </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -70,21 +80,21 @@
         </section>
 
             <!-- Summary information about the chosen coastal area -->
-            <div class="coastal-summary">
+            <div class="coastal-summary-card">
                 <h2>Explore the Southern California Coast</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ex eu elit tincidunt faucibus eget
                     vitae ipsum.</p>
             </div>
 
             <!-- Call-to-action (CTA) to make your own fruit drink mix linking to Fresh page -->
-            <div class="cta-section">
+            <div class="cta-section-card">
                 <h2>Make Your Own Fruit Drink Mix</h2>
                 <p>Choose from a variety of fresh fruits and create your own specialty drink.</p>
                 <a href="fresh.html" class="cta-button">Get Started</a>
             </div>
 
             <!-- Social media links -->
-            <div class="social-links">
+            <div class="social-links-card">
                 <a href="https://www.facebook.com" class="social-icon"><img src="../bountifulfoods/images/facebookicon.png" alt="Facebook"></a>
                 <a href="https://twitter.com/" class="social-icon"><img src="../bountifulfoods/images/twitericon.png" alt="Twitter"></a>
                 <a href="https://www.instagram.com/" class="social-icon"><img src="../bountifulfoods/images/instagramicon.png" alt="Instagram"></a>
@@ -105,7 +115,7 @@
                     </div>
             </div>
             <!-- Information card about the total number of specialty drinks -->
-            <div class="specialty-drinks">
+            <div class="specialty-drinks-card">
                 <h3>Total Specialty Drinks Submitted</h3>
                 <p>You have submitted <span id="total-drinks">0</span> specialty drinks.</p>
             </div>          
@@ -117,6 +127,7 @@
         </div>
     </footer>
     <script src="/bountifulfoods/scripts/lastupdate.js"></script>
+    <script src="/bountifulfoods/scripts/hamburger.js"></script>
     <script src="/bountifulfoods/scripts/weatherapi.js"defer></script>
 </body>
 </html>
