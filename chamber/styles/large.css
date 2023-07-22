@@ -91,12 +91,13 @@
 	.hero-title {
 		top: 85%;
 		left: 80%;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 	}
 	
 	.welcome-title {
 		top: 5%;
 		left: 50%;
+		font-size: 2rem;
 	}
 	
 	#event {
