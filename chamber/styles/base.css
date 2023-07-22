@@ -301,22 +301,16 @@ h1 {
   filter: blur(0);
 }
 
-
-
  /* main section */
 
  .mainclass {
 	background-color: #5D8BA2;
-	padding: 10px;
+	padding: 5px;
  }
 
 #main {
   transition: margin-left 0.5s;
-  padding: 10px;
-	margin-left: 3px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 5px;
 }
 
 .image-container img {
@@ -386,7 +380,7 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 1;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   text-align: center;
   background-color: #00000000;
   border-radius: 10px;
@@ -444,8 +438,7 @@ h1 {
 }
 
 #temperature {
-  font-size: 50px;
-  margin: 0;
+  margin-right: 10px;
 }
 
 #condition {
