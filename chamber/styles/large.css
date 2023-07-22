@@ -67,14 +67,6 @@
 		text-align: center;
 		}
 
-	.headings h1 {
-			font-size: 3rem;
-	}
-		
-	.headings h2 {
-			font-size: 3rem;
-	}
-
 	#main {
 		transition: margin-left 0.5s;
 		padding: 16px;

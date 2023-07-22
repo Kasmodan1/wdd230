@@ -1,5 +1,5 @@
-@media only screen and (min-width: 40em){
-
+@media only screen and (min-width: 33em)
+{
 	:is(header) > #banner {
 		display: block;
 		grid-column: 1/4;
@@ -36,15 +36,14 @@
 		justify-self: center;
 		margin-right: 25px;
 	}
+
+	.headings {
+		width: 100%;
+	}
 	
 	.headings h1 {
-		font-size: 2rem;
+		font-size: 3vw;
 	}
-	
-	.headings h2 {
-		font-size: 2rem;
-	}
-		
 	
 	#main {
 		display: grid;
@@ -212,4 +211,5 @@
 		border-radius: 5px;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 	}
+
 }
