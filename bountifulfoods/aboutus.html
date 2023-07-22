@@ -3,16 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods - About Us</title>
-    <!-- Add your CSS and JavaScript references here -->
+    <meta name="description" content="Healthy Foods Website">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/bountifulfoods/styles/normalize.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/small.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/medium.css">
+    <link rel="stylesheet" href="/bountifulfoods/styles/large.css">
+    
+    <title>Bountiful Foods - Home</title>
 </head>
 
 <body>
     <header>
-        <!-- Navigation bar with business contact information -->
-        <!-- Add the navigation bar content here -->
+        <div id="navcon">
+            <section class="headings">
+                <h1>Bountiful Foods</h1> 
+            </section>
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    <picture>
+                        <a href="index.html">
+                            <img src="logo.png" alt="Bountiful Foods Logo">
+                        </a>
+                    </picture>
+                </div>
+
+                <ul class="nav-links navi">
+                    <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+
+                <div class="contact-info">
+                    <p>123 Main Street, Carlsbad, CA</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="fresh.html">Fresh</a>
+                    <a href="aboutus.html">About Us</a>
+                </nav>
+            </div>
+
+        </div>
     </header>
+
 
     <main>
         <!-- About Us page content -->
@@ -25,12 +74,13 @@
     </main>
 
     <footer>
-      <!-- Add footer content here -->
-      <!-- Include the last modified date using JavaScript -->
-      <div id="base-footer">
-          <p>&copy;<span id="year"></span> Bountiful Foods .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
-      </div>
-  </footer>
+        <!-- Add footer content here -->
+        <div id="base-footer">
+            <p>&copy;<span id="year"></span> Bountiful Foods .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
+        </div>
+    </footer>
+    <script src="/bountifulfoods/scripts/lastupdate.js"></script>
+    <script src="/bountifulfoods/scripts/hamburger.js"></script>
+    <script src="/bountifulfoods/scripts/weatherapi.js"defer></script>
 </body>
-
 </html>
