@@ -356,11 +356,11 @@ h1 {
 .welcome-title {
 	position: absolute;
   top: 10%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   color: white;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   text-align: center;
   background-color: #00000000;
   border-radius: 10px;
