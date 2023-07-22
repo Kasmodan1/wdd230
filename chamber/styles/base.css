@@ -323,7 +323,7 @@ h1 {
 }
 
 #hero, #event, #weather, #join, #news, .spotlight {
-  background-color: #707070;
+  background-color: #9b9a9a;
 	border: 1px solid black;
 	border-radius: 10px;
 	margin: 5px 5px 5px 5px;
@@ -486,7 +486,7 @@ button {
 }
 
 #spot1, #spot2, #spot3 {
-  background-color: #707070;
+  background-color: #9b9a9a;
 	padding: 5px;
 	margin: 7px 5px 7px 5px;
 }
