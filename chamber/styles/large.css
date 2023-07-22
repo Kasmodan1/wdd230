@@ -132,5 +132,13 @@
 		grid-row: 3/4;
 		grid-column: 1/2;
 	}
+
+	/* ######################################### Discover Page ################################################## */
+
+	.placeholder-container {
+		padding-left: 20px;
+	}
+
+
   
 }

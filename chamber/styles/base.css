@@ -249,22 +249,22 @@ h1 {
 }
 
 .placeholder-container {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 
 .placeholder-image {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 92vw;
+  height: auto;
   background-color: #eee;
   position: relative;
 }
 
 .placeholder-image.loaded {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 92vw;
+  height: auto;
   background-color: #eee;
   position: relative;
 }
@@ -281,8 +281,8 @@ h1 {
 
 .lazy-image {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 92vw;
+  height: auto;
   position: relative;
   background-color: #eee;
   transition: opacity 1s, filter 1s;
@@ -576,7 +576,7 @@ footer{
   flex: none; /* Reset flex value to default */
 }
 
-/* ######################################### Discovery Page ################################################## */
+/* ######################################### Directory Page ################################################## */
 
 .directorybody {
 	padding: 10px;

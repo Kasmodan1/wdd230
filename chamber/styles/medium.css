@@ -212,4 +212,85 @@
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 	}
 
+	/* ######################################### Discover Page ################################################## */
+
+	.mainclass {
+		margin: 0 auto;
+		font-size: clamp(16px, 1.8vw, 22px);
+	}
+
+	.demographics p {
+		margin: auto 20vw;
+	}
+
+	.demographics h2 {
+		text-align: center;
+	}
+
+	.discovery-ul {
+		margin-left: 80px;
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+	}
+
+	.discovery-ul2 {
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+	}
+
+	.demographics ul {
+		flex-direction: column;
+		padding: 0;
+		text-align: left;
+	}
+
+	#daysDiff {
+		margin: auto auto;
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		padding: 10px;
+		border: 1px solid #ccc;
+	}
+
+	.placeholder-container {
+		padding-left: 5px;
+	}
+
+	.placeholder-image {
+		display: block;
+		width: 96vw;
+		height: auto;
+		background-color: #eee;
+		position: relative;
+	}
+	
+	.placeholder-image.loaded {
+		display: block;
+		width: 96vw;
+		height: auto;
+		background-color: #eee;
+		position: relative;
+	}
+
+	.lazy-image {
+		display: block;
+		width: 96vw;
+		height: auto;
+		position: relative;
+		background-color: #eee;
+		transition: opacity 1s, filter 1s;
+		opacity: 0;
+		filter: blur(10px);
+	}
+	
+	.lazy-image.loaded {
+		display: block;
+		opacity: 1;
+		filter: blur(0);
+	}
+	
+
 }
