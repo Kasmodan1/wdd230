@@ -1,51 +1,68 @@
-// windchill.js
+document.addEventListener('DOMContentLoaded', function () {
+	// Weather API Key (Replace with your actual API key)
+	const apiKey = '4c54fca158b42e311af4648c4552b37c';
+	const locationData = {lat: 42.43, lon: -123.30};
+	console.log ('Location Data"', locationData);
 
-// Function to calculate wind chill factor
-function calculateWindChill() {
-  // Get temperature and wind speed values from the <span> tags
-  const temperature = parseFloat(document.getElementById("temperatureValue").textContent);
-  const windSpeed = parseFloat(document.getElementById("windSpeedValue").textContent);
+	// Calculate the wind chill using the formula for temperatures in Fahrenheit.
+	function calculateWindChillFactor(temperature, windSpeed){
+		const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+		return windChill;
+	};
+	
+	function calculateWindChill(temperature, windSpeed) {
+		// Check if input values meet the specification limits
+		if (temperature <= 50 && windSpeed > 3.0) {
+			// Calculate wind chill factor
+			const windChill = calculateWindChillFactor(temperature, windSpeed);
+			document.getElementById("windChill").textContent = `${windChill.toFixed(2)} °F`;
+		} 
+		else {
+			document.getElementById("windChill").textContent = "N/A";
+		}
+	
+	};
+	  
+	// Function to display current weather
+	function displayCurrentWeather(currentWeatherData) {
+		const currentWeatherElement = document.getElementById('current-weather');
+
+		console.log('Current Weather Data:', currentWeatherData);
+
+		const temperature = currentWeatherData.main.temp;
+		const condition = currentWeatherData.weather[0].description;
+		const humidity = currentWeatherData.main.humidity;
+		const windSpeed = currentWeatherData.wind.speed;
+		const windChill = calculateWindChill(temperature, windSpeed);
+
+		const temperatureElement = document.getElementById('temperature');
+		const conditionElement = document.getElementById('condition');
+		const humidityElement = document.getElementById('humidity');
+		const windSpeedElement = document.getElementById('windSpeed'); 
+		const windChillElement = document.getElementById('windChill'); 
+
+		temperatureElement.textContent = `${temperature.toFixed(1)}°F`;
+		conditionElement.textContent = condition;
+		humidityElement.textContent = `${humidity}%`;
+		windSpeedElement.textContent = windSpeed;
+		windChillElement.textContent = windChill;
+	};
+	
+	// Async function to fetch weather data and display
+	async function fetchAndDisplayWeather() {
+		try {
+		// Fetch current weather data in imperial units (Fahrenheit)
+		const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`);
+		const currentWeatherData = await currentWeatherResponse.json();
+
+		console.log('Forecast Data:', currentWeatherData); // Add this line to log
+
+		// Display current weather
+		displayCurrentWeather(currentWeatherData);
   
-  // Check if input values meet the specification limits
-  if (temperature <= 50 && windSpeed > 3.0) {
-    // Calculate wind chill factor
-    const windChill = calculateWindChillFactor(temperature, windSpeed);
-    document.getElementById("windChillResult").textContent = `Wind Chill Factor: ${windChill.toFixed(2)} °F`;
-  } else {
-    document.getElementById("windChillResult").textContent = "N/A";
-  }
-}
-
-// Function to calculate wind chill factor
-function calculateWindChillFactor(temperature, windSpeed) {
-  const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-  return windChill;
-}
-
-// Simulated function to fetch data from the API
-function fetchDataFromAPI() {
-  // Replace this with your actual API call logic
-  // Return a Promise that resolves with the fetched data
-  return new Promise((resolve, reject) => {
-    // Simulating API response
-    const data = {
-      temperature: 40.5,
-      windSpeed: 5.8
-    };
-    
-    setTimeout(() => {
-      resolve(data);
-    }, 1000); // Simulating a delay of 1 second
-  });
-}
-
-// Fetch temperature and wind speed values from the API
-fetchDataFromAPI().then(data => {
-  document.getElementById("temperatureValue").textContent = data.temperature;
-  document.getElementById("windSpeedValue").textContent = data.windSpeed;
-
-  // Calculate wind chill
-  calculateWindChill();
-}).catch(error => {
-  console.error(error);
-});
+		} catch (error) {
+			console.error('Error fetching weather data:', error);
+		}
+	}; 
+	fetchAndDisplayWeather();
+}); 

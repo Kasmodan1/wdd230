@@ -82,14 +82,15 @@
         </div>
         <div class="mainevent" id="weather">
             <section>
-                <h1>Grants Pass Weather</h1>
-                <label for="temperature">Temperature (°F):</label>
-                <input id="temperature">
-                <span id="temperatureValue"></span>
-                <label for="windSpeed">Wind Speed (mph):</label>
-                <input id="windSpeed">
-                <span id="windSpeedValue"></span>
-                <div id="windChillResult"></div>
+                <h3>Grants Pass Weather</h3>
+                <div id="current-weather">
+                    <img id="weather-icon" src="" alt="weather icon">
+                    <p>Temperature: <span id="temperature">--</span></p>
+                    <p>Condition: <span id="condition">--</span></p>
+                    <p>Humidity: <span id="humidity">--</span></p>
+                    <p>Wind Speed (mph): <span id="windSpeed">--</span></p>
+                    <p>Wind Chill: <span id="windChill">--</span></p>
+                </div>
             </section>
         </div>
         <div class="mainevent" id="join">
@@ -146,6 +147,6 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/dates.js"></script>
 <script src="scripts/banner.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/windchill.js">defer</script>
 </body>
 </html>
