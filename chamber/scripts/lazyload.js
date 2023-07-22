@@ -15,15 +15,11 @@ const placeObserver = new IntersectionObserver((entries, placeObserver) => {
       placeObserver.unobserve(placeholder);
     }
   });
-
 });
 
 placeholderImages.forEach(placeholder => {
   placeObserver.observe(placeholder);
 });
-
-
-
 
 // this loads my real image that I wanted to load.
 const lazyImages = document.querySelectorAll('.lazy-image');

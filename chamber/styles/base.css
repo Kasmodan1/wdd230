@@ -11,6 +11,7 @@ html {
 
 body{
 	background-color: #3B5E45;
+  min-width: 375px;
 }
 
 :is(header) > #banner {
@@ -224,11 +225,26 @@ nav {
 
 /* Discover lazy loading section */
 
-#image-container {
+#daysDiff {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 35px 20px 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+}
+
+.placeholder-container img {
+  display: block;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -236,6 +252,11 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
+.placeholder-container {
+  padding-left: 15px;
+}
+
 
 .placeholder-image {
   display: block;
@@ -307,7 +328,6 @@ h1 {
 .image-container:hover img {
   opacity: 0.8;
 }
-
 
 #hero, #event, #weather, #join, #news, .spotlight {
   background-color: #b9b9b9;
