@@ -471,6 +471,10 @@ button {
 	display: none;
 }
 
+#join button {
+  font-size: 1.8rem;
+}
+
 #news {
 	grid-row: 4/5;
 	grid-column: 1/2;
