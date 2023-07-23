@@ -564,9 +564,11 @@ h1 {
 }
 
 #news {
+  padding: 10px;
 	grid-row: 4/5;
 	grid-column: 1/2;
 }
+
 
 /* ### Spot Light Section ### */
 

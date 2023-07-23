@@ -70,8 +70,9 @@
 	#news {
 		grid-row: 2/3;
 		grid-column: 1/9;
+		padding: 10px;
 	}
-	
+
 	.spotlight {
 		display: grid;
 		grid-row: 3/4;
