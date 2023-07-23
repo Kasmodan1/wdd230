@@ -417,6 +417,7 @@ h1 {
 }
 
 #current-weather {
+  margin: 10px;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -462,14 +463,12 @@ h1 {
 }
 
 #weather-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-left: auto; /* This will push the weather icon to the right */
 }
 
-
 /* ## weather details ## */
-
 
 #weather-details {
   border-bottom: 1px solid #4e88bf; /* Blue thin line under the heading */
@@ -505,7 +504,6 @@ h1 {
   display: grid;
 }
 
-
 .detail {
   font-size: small;
   grid-column: 1/2;
@@ -527,7 +525,6 @@ h1 {
 .stats p{
   margin: 5px;
 }
-
 
 #temperature, #humidity, #windSpeed, #windChill {
   font-weight: bold;
