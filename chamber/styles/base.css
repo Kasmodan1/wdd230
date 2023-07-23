@@ -567,6 +567,34 @@ h1 {
 	grid-row: 4/5;
 	grid-column: 1/2;
 }
+
+/* ### Spot Light Section ### */
+
+/* Tier-specific border colors */
+[data-tier="Bronze"] {
+  border-color: #cd7f32; /* Bronze */
+}
+
+[data-tier="Silver"] {
+  border-color: #c0c0c0; /* Silver */
+}
+
+[data-tier="Gold"] {
+  border-color: #ffd700; /* Gold */
+}
+
+[data-tier="Platinum"] {
+  border-color: #e5e4e2; /* Platinum */
+}
+
+[data-tier="Diamond"] {
+  border-color: #8b4513; /* Deeper brown for Diamond */
+}
+
+[data-tier="Legacy"] {
+  border-color: #0000ff; /* Blue for Legacy */
+}
+
 .spotlight {
   background-color: #5D8BA2;
 	grid-row: 5/6;
@@ -591,6 +619,9 @@ h1 {
 	display: none;
 	border: 1px solid black;
 }
+
+
+/* ####################### */
 
 footer{
   background-color: #3B5E45;
