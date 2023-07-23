@@ -412,58 +412,149 @@ h1 {
 
 /* Weather section */
 
-#weather {
-	grid-row: 3/4;
-	grid-column: 1/2;
+#weather h1{
+  font-size: 28px;
 }
 
-.weather-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.weather-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFFFFF;
+#current-weather {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 20px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
 }
 
-#temperature {
-  margin-right: 10px;
+/* ## weather top ## */
+
+#weather-top {
+  background-color: hsl(44, 100%, 50%);
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  align-items: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+#weather-top > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather-top p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  gap: 10px; /* Add some gap between the elements */
 }
 
 #condition {
-  font-size: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-left: auto; /* This will push the weather icon to the right */
+}
+
+
+/* ## weather details ## */
+
+
+#weather-details {
+  border-bottom: 1px solid #4e88bf; /* Blue thin line under the heading */
+  padding-bottom: 10px; /* Add some spacing below the line */
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+#bottom-detail h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
   margin: 0;
+  color: black;
 }
 
-#location {
-  font-size: 20px;
-  margin: 0;
+.divider {
+  height: 2px;
+  background-color: #4e88bf; /* Blue color for the divider */
+  margin: 5px 0; /* Add some spacing above and below the divider */
 }
 
-input[type="text"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 10px; /* Add some gap between the columns */
 }
 
-button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #1C5982;
-  color: #FFFFFF;
-  cursor: pointer;
+.details-grid div{
+  display: grid;
 }
+
+
+.detail {
+  font-size: small;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: left;
+}
+
+.detail p {
+  margin: 5px;
+}
+
+.stats {
+  font-size: small;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: left;
+}
+
+.stats p{
+  margin: 5px;
+}
+
+
+#temperature, #humidity, #windSpeed, #windChill {
+  font-weight: bold;
+}
+
+#temp-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+#bottom-detail {
+  margin-top: 10px;
+  grid-column: 2/3;
+}
+
+/* ## weather details ## */
+
+#weather-bottom {
+  background-color: hsl(44, 100%, 50%);
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
 
 /* ***** */
 
@@ -653,7 +744,7 @@ list {
 }
 
 .col {
-  flex-basis: 20%; /* Adjust the width as needed */
+  flex-basis: 20%;
   padding: 5px;
 }
 

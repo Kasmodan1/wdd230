@@ -82,14 +82,37 @@
         </div>
         <div class="mainevent" id="weather">
             <section>
-                <h3>Grants Pass Weather</h3>
+                <h1>Grants Pass Weather</h1>
                 <div id="current-weather">
-                    <img id="weather-icon" src="" alt="weather icon">
-                    <p>Temperature: <span id="temperature">--</span></p>
-                    <p>Condition: <span id="condition">--</span></p>
-                    <p>Humidity: <span id="humidity">--</span></p>
-                    <p>Wind Speed (mph): <span id="windSpeed">--</span></p>
-                    <p>Wind Chill: <span id="windChill">--</span></p>
+                    <div id="weather-top">
+                        <div>
+                            <p>Grants Pass, US</p>
+                            <p><span id="condition">--</span></p>
+                        </div>
+                        <img id="weather-icon" src="" alt="weather icon">
+                    </div>
+                    <div id="weather-details">
+                        <div id="temp-large">
+                            <p><span id="temperature">--</span></p>
+                        </div>
+                        <div id="bottom-detail">
+                            <h3>Details</h3>
+                            <div class="divider"></div>
+                            <div class="details-grid">
+                                <div class="detail">
+                                    <p>Humidity:</p>
+                                    <p>Wind Speed (mph):</p>
+                                    <p>Wind Chill:</p>
+                                </div>
+                                <div class="stats">
+                                    <p><span id="humidity">--</span></p>
+                                    <p><span id="windSpeed">--</span></p>
+                                    <p><span id="windChill">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="weather-bottom"></div>
                 </div>
             </section>
         </div>
@@ -148,5 +171,7 @@
 <script src="scripts/dates.js"></script>
 <script src="scripts/banner.js"></script>
 <script src="scripts/windchill.js">defer</script>
+<script src="scripts/weatherwidget.js">defer</script>
+
 </body>
 </html>
