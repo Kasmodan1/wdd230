@@ -20,7 +20,7 @@
     <title>Bountiful Foods - Home</title>
 </head>
 
-<body>
+<body id="fresh-body">
     <header>
         <div id="navcon">
             <section class="headings">
@@ -58,22 +58,65 @@
                     <a href="aboutus.html">About Us</a>
                 </nav>
             </div>
-
         </div>
     </header>
 
-
-    <main>
+    <main id="fresh-main">
         <!-- Fresh page content -->
         <section id="fresh-form-section">
-            <!-- Form allowing users to build their own specialty drink -->
+          <!-- Form allowing users to build their own specialty drink -->
             <form id="fresh-form">
-                <!-- Required user inputs: first name, email, phone number, three select elements with available fruits -->
-                <!-- Area for users to add special instructions -->
-                <!-- Submit button -->
+            <!-- Required user inputs: first name, email, phone number, three select elements with available fruits -->
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="fruit1">Select Fruit 1:</label>
+                    <select id="fruit1" required>
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="fruit2">Select Fruit 2:</label>
+                    <select id="fruit2" required>
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="fruit3">Select Fruit 3:</label>
+                    <select id="fruit3" required>
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="special-instructions">Special Instructions:</label>
+                    <textarea id="special-instructions"></textarea>
+                </div>
+    
+                <button id="submit-button" type="submit">Submit</button>
             </form>
-            <!-- Output area to display formatted output upon form submission -->
         </section>
+        <!-- Modal Box -->
+        <div id="order-modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="output-container"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -84,6 +127,6 @@
     </footer>
     <script src="/bountifulfoods/scripts/lastupdate.js"></script>
     <script src="/bountifulfoods/scripts/hamburger.js"></script>
-    <script src="/bountifulfoods/scripts/weatherapi.js"defer></script>
+    <script src="/bountifulfoods/scripts/fresh.js" defer></script>
 </body>
 </html>
