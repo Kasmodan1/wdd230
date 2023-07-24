@@ -213,18 +213,22 @@ nav {
 
 /* ### Parallax section ### */
 
+/* Create the parallax scrolling effect */
+
 .parallax-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/harvest.webp');
 
   background-attachment: fixed;
-
-  background-image: url('/bountifulfoods/images/highrez/harvest.webp');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
+
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
@@ -238,16 +242,18 @@ nav {
 
 .parallax-container2 {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/peoplepicking.webp');
+
 
   background-attachment: fixed;
-
-  background-image: url('/bountifulfoods/images/highrez/peoplepicking.webp');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
@@ -255,16 +261,20 @@ nav {
 
 .parallax-container3 {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-attachment: fixed;
+
 
   background-image: url('/bountifulfoods/images/highrez/orchard.webp');
+
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+ 
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
@@ -272,16 +282,18 @@ nav {
 
 .parallax-container4 {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-attachment: fixed;
-
   background-image: url('/bountifulfoods/images/highrez/fooddisplay.webp');
+
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
