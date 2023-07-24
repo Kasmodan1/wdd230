@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/bountifulfoods/styles/small.css">
     <link rel="stylesheet" href="/bountifulfoods/styles/medium.css">
     <link rel="stylesheet" href="/bountifulfoods/styles/large.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     
     <title>Bountiful Foods - Home</title>
 </head>
@@ -64,12 +65,54 @@
 
 
     <main>
-        <!-- About Us page content -->
         <section id="about-section">
-            <!-- Historical information about the company and the chosen coastal area -->
-            <!-- Contact information -->
-            <!-- Google Map integration -->
-            <!-- Other relevant content -->
+                    <!-- About Us page content -->
+        <section id="about-section">
+            <h2>About Bountiful Foods</h2>
+            <p>Bountiful Foods is a small business specializing in organic, locally grown foods. We are physically located
+                in Carlsbad, California, but our reach extends through our food trucks that cover the coastal area from Los
+                Angeles to San Diego. Our mission is to provide fresh and healthy food options, including organic, made-to-order
+                fruit drinks and fruit bags, to the local population and tourists visiting the coastal areas.</p>
+
+            <h3>Our Story</h3>
+            <p>Bountiful Foods was founded in 2005 by Sarah and David Anderson, a couple passionate about promoting healthy
+                and sustainable living. What began as a small organic farm in Carlsbad quickly grew into a thriving business
+                as we sought to share our love for fresh and locally grown foods with the community.</p>
+            <p>Over the years, our dedication to quality and sustainability earned us a loyal customer base and numerous
+                accolades. Today, we take pride in being a staple in the coastal region, offering the best of nature's bounty
+                right to your table.</p>
+
+            <h3>Our Food Trucks</h3>
+            <p>As the demand for our organic produce grew, we expanded our operations beyond the storefront. Our fleet of
+                food trucks allows us to reach even more customers in various coastal areas, providing access to fresh fruits
+                and produce while on the go.</p>
+            <p>Each food truck is equipped with a team of friendly and knowledgeable staff, ready to serve you with a smile
+                and answer any questions you may have about our products. Our food trucks have become a favorite among locals
+                and tourists alike.</p>
+
+            <h3>Community Involvement</h3>
+            <p>At Bountiful Foods, we believe in giving back to the community. We actively participate in farmers' markets,
+                local events, and collaborate with schools to promote healthy eating habits among children. Our "Farm to School"
+                initiative allows us to educate young minds about the benefits of organic and locally sourced foods.</p>
+
+            <h3>Online Ordering</h3>
+            <p>To cater to your convenience, we have launched a user-friendly website that allows you to browse our product
+                offerings and place orders for delivery. Whether it's a fruit bag for a family picnic or a refreshing fruit
+                drink to beat the summer heat, you can now enjoy the goodness of Bountiful Foods with just a few clicks.</p>
+
+            <h3>Looking Ahead</h3>
+            <p>As Bountiful Foods continues to grow, our commitment to providing fresh and healthy food options remains at
+                the core of our mission. With a vision to expand our reach and influence, we strive to become a household
+                name synonymous with organic bounty, health-conscious choices, and the joy of savoring nature's delicious
+                offerings.</p>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Address: 123 Main Street, Carlsbad, CA</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+            <!--Map -->
+            <div id="map-container"></div>
         </section>
     </main>
 
@@ -79,8 +122,9 @@
             <p>&copy;<span id="year"></span> Bountiful Foods .:|:. Scott W. Midkiff .:|:. WDD 230 Project |:. <span id="lastupdate"></span></p>
         </div>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="/bountifulfoods/scripts/lastupdate.js"></script>
     <script src="/bountifulfoods/scripts/hamburger.js"></script>
-    <script src="/bountifulfoods/scripts/weatherapi.js"defer></script>
+    <script src="/bountifulfoods/scripts/map.js"></script>
 </body>
 </html>
