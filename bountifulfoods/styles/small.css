@@ -338,6 +338,15 @@ footer a:hover {
   background-color: white
 }
 
+#fresh-background {
+  background-image: url('/bountifulfoods/images/highrez/fruit.webp');
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #fresh-form-section {
   max-width: 600px;
   margin: 0 auto;
@@ -479,6 +488,44 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-image: url('/bountifulfoods/images/highrez/organic.webp');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container-aboutus2 {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/smoothies.webp');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container-aboutus3 {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/smothies2.webp');
 
   background-attachment: fixed;
   background-position: center;
