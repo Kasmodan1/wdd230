@@ -299,6 +299,28 @@ nav {
   text-align: center;
 }
 
+/* Footer styles */
+
+footer {
+  background-color: #3349cc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 
 /* ############################## Fresh Page ##################################### */
 
@@ -313,6 +335,7 @@ nav {
 
 #fresh-main {
   padding: 40px;
+  background-color: white
 }
 
 #fresh-form-section {
@@ -424,4 +447,98 @@ button:hover {
   cursor: pointer;
 }
 
-/* ################################################################### */
+/* ############################ Aboutus Page ####################################### */
+
+#aboutus-main {
+  background-color: white
+}
+
+.parallax-container-aboutus {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/harvest.webp');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container-aboutus1 {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/bountifulfoods/images/highrez/organic.webp');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  color: var(--color);
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.buffer {
+  width: 100%;
+  min-height: 30vh;
+  background-color: var(--color);
+}
+
+
+/* Reset styles for the map container */
+#map-container {
+  width: 80%;
+  height: 425px;
+  margin: 20px auto;
+}
+
+/* About Us section styles */
+#about-section {
+  padding: 20px;
+}
+
+#about-section h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#about-section h3 {
+  font-size: 28px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Contact information section styles */
+#contact-section {
+  padding: 20px;
+}
+
+#contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#contact-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
