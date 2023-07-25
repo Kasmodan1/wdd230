@@ -31,6 +31,14 @@
     height: auto;
   }
 
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .nav-links {
+      display: flex;
+  }
+
   .parallax-container h1{
     font-size: 3rem;
     margin: 0;

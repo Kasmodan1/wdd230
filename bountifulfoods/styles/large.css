@@ -10,6 +10,18 @@
     margin: 0;
   }
 
+  .navi li {
+		display: block;
+	}
+
+  .navi li:first-child {
+		display: none;
+	}
+
+  .logo img {
+    width: 50vw; /* Adjust the logo width based on the viewport width */
+  }
+
 
   /* ############################## Fresh Page ##################################### */
   
