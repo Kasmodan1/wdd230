@@ -275,7 +275,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/harvest.webp');
+  background-image: url('../images/highrez/harvest.webp');
 
   background-attachment: fixed;
   background-position: center;
@@ -316,7 +316,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/peoplepicking.webp');
+  background-image: url('../images/highrez/peoplepicking.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/orchard.webp');
+  background-image: url('../images/highrez/orchard.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/fooddisplay.webp');
+  background-image: url('../images/highrez/fooddisplay.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -423,7 +423,7 @@ footer a:hover {
 
 #fresh-background {
   position: relative;
-  background-image: url('images/highrez/fruit.webp');
+  background-image: url('../images/highrez/fruit.webp');
   min-height: 65vh;
   display: flex;
   flex-direction: column;
@@ -552,7 +552,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/harvest.webp');
+  background-image: url('../images/highrez/harvest.webp');
 
   background-attachment: fixed;
   background-position: center;
@@ -571,7 +571,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/organic.webp');
+  background-image: url('../images/highrez/organic.webp');
 
   background-attachment: fixed;
   background-position: center;
@@ -590,7 +590,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/smoothies.webp');
+  background-image: url('../images/highrez/smoothies.webp');
 
   background-attachment: fixed;
   background-position: center;
@@ -609,7 +609,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('images/highrez/smothies2.webp');
+  background-image: url('../images/highrez/smothies2.webp');
 
   background-attachment: fixed;
   background-position: center;
