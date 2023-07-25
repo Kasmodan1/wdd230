@@ -34,7 +34,7 @@
   .hamburger-menu {
     display: none;
   }
-  
+
   .nav-links {
       display: flex;
   }
@@ -56,6 +56,19 @@
   
   .weather-widget, .forecast-widget {
     margin: 10px;
+  }
+
+  /* Modify the .buffer class for medium screens */
+  #social-buffer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Make sure your child elements fit nicely side by side */
+  .social-links-card, .weather-widget, .forecast-widget {
+    width: 30%;  /* Adjust as needed */
   }
   
   

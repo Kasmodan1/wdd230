@@ -3,8 +3,8 @@ function updateInfoCard() {
   const submittedData = JSON.parse(localStorage.getItem('submittedData')) || [];
   const drinkCount = submittedData.length;
 
-  console.log('json info', submittedData)
-  console.log('Data', drinkCount)
+  //console.log('json info', submittedData)
+  //console.log('Data', drinkCount)
 
   const drinkCountElement = document.getElementById('drink-count');
   drinkCountElement.textContent = drinkCount.toString();

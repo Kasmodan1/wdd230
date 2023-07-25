@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to filter forecast data for a specific day
   function filterForecastDataForDay(forecastData, targetDate) {
-    console.log('Filtering forecast data for:', targetDate);
+    //console.log('Filtering forecast data for:', targetDate);
     return forecastData.list.filter((forecast) => {
         const forecastDate = new Date(forecast.dt_txt);
-        console.log('Checking forecastDate:', forecastDate);
+        //console.log('Checking forecastDate:', forecastDate);
       
         const forecastDateWithoutTime = new Date(
             forecastDate.getFullYear(),
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             forecastDate.getDate()
         );
 
-        console.log('Checking forecast date without time:', forecastDateWithoutTime);
+        //console.log('Checking forecast date without time:', forecastDateWithoutTime);
 
         const targetDateWithoutTime = new Date(
             targetDate.getFullYear(),
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         minTemp = Math.min(minTemp, main.temp_min);
         maxTemp = Math.max(maxTemp, main.temp_max);
 
-        console.log('Weather data:', weather); // Log weather data
+        //console.log('Weather data:', weather); // Log weather data
 
         if (weather && weather.length > 0) {
           conditionCode = weather[0].icon; // Extracting icon code instead of id
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetDate = new Date(now.getTime() + i * 24 * 60 * 60 * 1000);
         const filteredForecastData = filterForecastDataForDay(forecastData, targetDate);
 
-        console.log('Target Date:', targetDate);
-        console.log('Filtered Data:', filteredForecastData);
+        //console.log('Target Date:', targetDate);
+        //console.log('Filtered Data:', filteredForecastData);
 
         if (filteredForecastData.length > 0) {
             const { minTemp, maxTemp, conditionCode } = processForecastData({ list: filteredForecastData });
 
-            console.log('Forecast:', targetDate, filteredForecastData[0].dt_txt);
+            //console.log('Forecast:', targetDate, filteredForecastData[0].dt_txt);
 
             const dayIndex = targetDate.getDay();
             const dayName = weekdays[dayIndex];
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
       );
       const currentWeatherData = await currentWeatherResponse.json();
 
-      console.log('Current Weather Data:', currentWeatherData);
+      //console.log('Current Weather Data:', currentWeatherData);
 
       // Fetch 5-day forecast data in imperial units (Fahrenheit)
       const forecastResponse = await fetch(
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
       );
       const forecastData = await forecastResponse.json();
 
-      console.log('Full Forecast Data:', forecastData);
+      //console.log('Full Forecast Data:', forecastData);
 
       // Display current weather
       displayCurrentWeather(currentWeatherData);

@@ -22,6 +22,21 @@
     width: 50vw; /* Adjust the logo width based on the viewport width */
   }
 
+  /* Modify the .buffer class for large screens */
+  #social-buffer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  /* Make sure your child elements fit nicely side by side */
+  .social-links-card, .weather-widget, .forecast-widget {
+    width: 30%;  /* Adjust as needed */
+    margin: 5px;
+    padding: 5px;
+  }
+
 
   /* ############################## Fresh Page ##################################### */
   
