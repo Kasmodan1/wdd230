@@ -1,4 +1,14 @@
-@media only screen and (min-width: 68em)
+@media only screen and (min-width: 70em)
 {
 
+  /* ############################## Fresh Page ##################################### */
+  
+  label {
+    color: black;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+  }
 }
