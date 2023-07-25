@@ -1,6 +1,4 @@
-:root {
-  --color: rgb(63 63 63);
-}
+
 
 html {
   font-size: 16px;
@@ -9,13 +7,13 @@ html {
 /* ### Body Section ### */
 body {
   margin: 0;
-  font-family: Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
   min-width: 375px;
 }
 
-
 /* ################################### Header Section #####################################*/
-
 header {
   background-color: #3349cc;
   padding: 5px;
@@ -33,7 +31,7 @@ header {
 }
 
 .headings h1 {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	margin: 0;
 }
 
@@ -72,6 +70,7 @@ nav {
 	margin: 0;
 	display: flex;
 	background-color: #3349cc;
+  justify-content: flex-end;
 }
 
 .navi li {
@@ -200,6 +199,17 @@ nav {
 /* ################################## Main Section #######################################*/
 /* ### Social Media Icons ### */
 
+main {
+  background-color: #000000;
+}
+
+#social-buffer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .social-links {
   display: flex;
   gap: 10px;
@@ -209,6 +219,50 @@ nav {
 .social-icon img {
   width: 30px;
   height: 30px;
+}
+
+.weather-widget, .forecast-widget {
+  background-color: #f9f9f9;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.weather-widget-header, .forecast-widget-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-widget-header h3, .forecast-widget-header h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.weather-widget-content, .forecast-widget-content {
+  text-align: center;
+}
+
+.weather-widget-content p, .forecast-widget-content p {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.weather-icon {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.widget-box {
+  width: 300px; /* Adjust the width to your desired size */
+  height: 250px; /* Adjust the height to your desired size */
+  padding: 20px; /* Optional: Add padding to create spacing between the content and the widget box */
+  border: 1px solid #ccc; /* Optional: Add a border to the widget box */
+  /* Add other styling properties as needed */
 }
 
 /* ### Parallax section ### */
@@ -227,17 +281,33 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
-  color: var(--color);
   row-gap: 4rem;
   text-align: center;
+}
+
+.parallax-container div {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.parallax-container h1{
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.parallax-container p{
+  font-size: 1rem;
+  margin: 0;
 }
 
 .buffer {
   width: 100%;
   min-height: 30vh;
-  background-color: var(--color);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .parallax-container2 {
@@ -247,8 +317,6 @@ nav {
   align-items: center;
   justify-content: center;
   background-image: url('/bountifulfoods/images/highrez/peoplepicking.webp');
-
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,16 +333,11 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
-
   background-image: url('/bountifulfoods/images/highrez/orchard.webp');
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
@@ -286,9 +349,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-image: url('/bountifulfoods/images/highrez/fooddisplay.webp');
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,6 +358,34 @@ nav {
   color: var(--color);
   row-gap: 4rem;
   text-align: center;
+}
+
+.coastal-summary-card{
+  padding: 10px;
+}
+
+.cta-section-card {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.cta-button {
+  display: inline-block;
+  color: #fff;
+  background-color: #f04;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c03;
+}
+
+#info-card {
+  font-size: 0.9rem;;
+  padding: 10px;
 }
 
 /* Footer styles */
@@ -320,7 +409,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 
 /* ############################## Fresh Page ##################################### */
 
@@ -533,13 +621,6 @@ button:hover {
   row-gap: 4rem;
   text-align: center;
 }
-
-.buffer {
-  width: 100%;
-  min-height: 30vh;
-  background-color: var(--color);
-}
-
 
 /* Reset styles for the map container */
 #map-container {

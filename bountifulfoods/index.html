@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="/bountifulfoods/styles/normalize.css">
     <link rel="stylesheet" href="/bountifulfoods/styles/small.css">
     <link rel="stylesheet" href="/bountifulfoods/styles/medium.css">
     <link rel="stylesheet" href="/bountifulfoods/styles/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <title>Bountiful Foods - Home</title>
 </head>
@@ -66,36 +67,67 @@
         <!-- Home page content -->
         <section>
             <div class="parallax-container">
-                <h1>Bountiful Foods</h1>
-            <p>Specializing in organic, locally grown foods</p>
+                <div>
+                    <h1>Bountiful Foods</h1>
+                    <p>Specializing in organic, locally grown foods</p>
+                </div>
             </div>
         </section>
 
-        <section class="buffer" id="Social-buffer">
+        <section class="buffer" id="social-buffer">
             <!-- Social media links -->
             <div class="social-links-card">
+                <h3>Social Links</h3>
+                <p>Come check our latest Events and Updates.</p>
                 <a href="https://www.facebook.com" class="social-icon"><img src="../bountifulfoods/images/facebookicon.png" alt="Facebook"></a>
                 <a href="https://twitter.com/" class="social-icon"><img src="../bountifulfoods/images/twitericon.png" alt="Twitter"></a>
                 <a href="https://www.instagram.com/" class="social-icon"><img src="../bountifulfoods/images/instagramicon.png" alt="Instagram"></a>
             </div>
+            <!-- Weather card(s) summarizing the current weather conditions for Carlsbad -->
+            <div class="weather-widget">
+                <div class="weather-widget-header">
+                  <h3>Current Weather in Carlsbad</h3>
+                </div>
+                <div id="current-weather" class="weather-widget-content">
+                  <p>Temperature: <span id="temperature">--</span></p>
+                  <p>Condition: <span id="condition">--</span></p>
+                  <p>Humidity: <span id="humidity">--</span></p>
+                  <i id="weather-icon" class="fas fa-question"></i>
+                </div>
+              </div>
+              <div class="forecast-widget">
+                <div class="forecast-widget-header">
+                  <h3>Three-Day Forecast</h3>
+                </div>
+                <div id="forecast" class="forecast-widget-content">
+                  <!-- Forecast data will be added dynamically -->
+                </div>
+              </div>
         </section>
+
         <section>
             <div class="parallax-container2"></div>
         </section>
         
-
         <section class="buffer">
-             <!-- Summary information about the chosen coastal area -->
+            <!-- Summary information about Carlsbad, Southern California -->
             <div class="coastal-summary-card">
-                <h2>Explore the Southern California Coast</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ex eu elit tincidunt faucibus eget
-                    vitae ipsum.</p>
+                <h2>Explore Carlsbad, Southern California</h2>
+                <p>Carlsbad is a charming coastal city located in Southern California, 
+                    known for its stunning beaches, beautiful flower fields, and adventurous outdoor activities. 
+                    It's a paradise for surfers with spots like Tamarack Surf Beach and South Carlsbad State Beach offering consistent waves. 
+                    The Carlsbad Flower Fields, open to the public from March through early May, 
+                    showcase a spectacular display of ranunculus flowers spread across 50 acres. 
+                    The city is also home to LEGOLAND California, a family-friendly theme park with over 60 rides, shows, 
+                    and attractions. For nature enthusiasts, the Agua Hedionda Lagoon offers boating, fishing, and hiking. 
+                    Furthermore, Carlsbad Village, the downtown district, offers unique shopping experiences and delicious dining options. 
+                    Discover Carlsbad, and experience the allure of Southern California's laid-back beach culture!</p>
             </div>
         </section>
+
         <section>
             <div class="parallax-container3"></div>
         </section>
-
 
         <section class="buffer">
             <!-- Call-to-action (CTA) to make your own fruit drink mix linking to Fresh page -->
@@ -104,32 +136,14 @@
                 <p>Choose from a variety of fresh fruits and create your own specialty drink.</p>
                 <a href="fresh.html" class="cta-button">Get Started</a>
             </div>
-        <section>
-        </section>
-    
-        <section>
-            <div class="parallax-container4"></div>
-        </section>
-
-
-        <!-- Weather card(s) summarizing the current weather conditions for Carlsbad -->
-        <div class="weather-card">
-            <h3>Current Weather in Carlsbad</h3> 
-            <div id="current-weather">
-                <p>Temperature: <span id="temperature">--</span></p>
-                <p>Condition: <span id="condition">--</span></p>
-                <p>Humidity: <span id="humidity">--</span></p>
-            </div>
-            <h4>Three-Day Forecast</h4>
-            <div id="forecast">
-                <!-- Forecast data will be added dynamically -->
-            </div>
-        </div>
-        <!-- Information card about the total number of specialty drinks -->
-        <section id="info-card">
+             <!-- Information card about the total number of specialty drinks -->
+             <section id="info-card">
                 <h3>Total Specialty Drinks Submitted</h3>
                 <p>Total number of specialty drinks submitted: <span id="drink-count">0</span></p>
-        </section>      
+            </section>    
+        <section>
+            <div class="parallax-container4"></div>
+        </section>  
     </main>
     <footer>
         <!-- Add footer content here -->

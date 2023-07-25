@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
   // Weather API Key (Replace with your actual API key)
   const apiKey = '4c54fca158b42e311af4648c4552b37c';
   const locationData = {
@@ -7,71 +6,93 @@ document.addEventListener('DOMContentLoaded', function () {
     lon: -117.3506,
   };
 
+  // Function to filter forecast data for a specific day
+  function filterForecastDataForDay(forecastData, targetDate) {
+    console.log('Filtering forecast data for:', targetDate);
+    return forecastData.list.filter((forecast) => {
+        const forecastDate = new Date(forecast.dt_txt);
+        console.log('Checking forecastDate:', forecastDate);
+      
+        const forecastDateWithoutTime = new Date(
+            forecastDate.getFullYear(),
+            forecastDate.getMonth(),
+            forecastDate.getDate()
+        );
+
+        console.log('Checking forecast date without time:', forecastDateWithoutTime);
+
+        const targetDateWithoutTime = new Date(
+            targetDate.getFullYear(),
+            targetDate.getMonth(),
+            targetDate.getDate()
+        );
+        
+        return forecastDateWithoutTime.getTime() === targetDateWithoutTime.getTime();
+    });
+  }
+
   // Function to process forecast data and extract highest and lowest temperatures for each day
   function processForecastData(forecastData) {
-    const dailyForecast = {};
+    let minTemp = Infinity;
+    let maxTemp = -Infinity;
+    let conditionCode;
 
-    // Loop through the forecast data and extract highest and lowest temperatures for each day
-    for (const forecast of forecastData) {
-      const forecastDate = new Date(forecast.dt * 1000);
-      const day = forecastDate.toDateString(); // Use the date string as the key to group data by day
+    for (let dataPoint of forecastData.list) {
+        const { main, weather } = dataPoint;
 
-      if (!(day in dailyForecast)) {
-        dailyForecast[day] = {
-          minTemp: forecast.main.temp_min,
-          maxTemp: forecast.main.temp_max,
-        };
-      } else {
-        const currentMinTemp = forecast.main.temp_min;
-        const currentMaxTemp = forecast.main.temp_max;
+        minTemp = Math.min(minTemp, main.temp_min);
+        maxTemp = Math.max(maxTemp, main.temp_max);
 
-        dailyForecast[day].minTemp = Math.min(dailyForecast[day].minTemp, currentMinTemp);
-        dailyForecast[day].maxTemp = Math.max(dailyForecast[day].maxTemp, currentMaxTemp);
+        console.log('Weather data:', weather); // Log weather data
+
+        if (weather && weather.length > 0) {
+          conditionCode = weather[0].icon; // Extracting icon code instead of id
       }
     }
 
-    return dailyForecast;
-  }
+    return { minTemp, maxTemp, conditionCode };
+}
 
   // Function to display three-day forecast
   function displayForecast(forecastData) {
     const forecastElement = document.getElementById('forecast');
     forecastElement.innerHTML = ''; // Clear previous forecast data
-  
+
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  
-    // Filter out forecast data for the next three days
     const now = new Date();
-    const nextThreeDays = [now, new Date(now.getTime() + 24 * 60 * 60 * 1000), new Date(now.getTime() + 2 * 24 * 60 * 60 * 1000)];
-    const filteredForecastData = forecastData.list.filter((forecast) => {
-      const forecastDate = new Date(forecast.dt * 1000);
-      return nextThreeDays.some((day) => day.toDateString() === forecastDate.toDateString());
-    });
-  
-    // Process filtered forecast data to get daily min and max temperatures
-    const dailyForecast = processForecastData(filteredForecastData);
-  
-    for (const day in dailyForecast) {
-      const { minTemp, maxTemp } = dailyForecast[day];
-      const forecastDate = new Date(day);
-      const dayIndex = forecastDate.getDay(); // Get the day index (0 to 6)
-      const dayName = weekdays[dayIndex]; // Get the short weekday name using the index
-  
-      const forecastItem = document.createElement('div');
-      forecastItem.classList.add('forecast-item');
-      forecastItem.innerHTML = `
-        <p>${dayName}</p>
-        <p>Low: ${minTemp.toFixed(1)}°F</p>
-        <p>High: ${maxTemp.toFixed(1)}°F</p>
-      `;
-      forecastElement.appendChild(forecastItem);
+
+    // Display forecast for the next three days
+    for (let i = 1; i < 4; i++) {
+        const targetDate = new Date(now.getTime() + i * 24 * 60 * 60 * 1000);
+        const filteredForecastData = filterForecastDataForDay(forecastData, targetDate);
+
+        console.log('Target Date:', targetDate);
+        console.log('Filtered Data:', filteredForecastData);
+
+        if (filteredForecastData.length > 0) {
+            const { minTemp, maxTemp, conditionCode } = processForecastData({ list: filteredForecastData });
+
+            console.log('Forecast:', targetDate, filteredForecastData[0].dt_txt);
+
+            const dayIndex = targetDate.getDay();
+            const dayName = weekdays[dayIndex];
+
+            const forecastItem = document.createElement('div');
+            forecastItem.classList.add('forecast-item');
+            forecastItem.innerHTML = `
+              <p>${dayName}</p>
+              <i class="${getWeatherIcon(conditionCode)}"></i>
+              <p>Low: ${minTemp.toFixed(1)}°F</p>
+              <p>High: ${maxTemp.toFixed(1)}°F</p>
+            `;
+            forecastElement.appendChild(forecastItem);
+        }
     }
-  }
+}
 
   // Function to display current weather
   function displayCurrentWeather(currentWeatherData) {
     const currentWeatherElement = document.getElementById('current-weather');
-    //console.log('Current Weather Data:', currentWeatherData);
 
     const temperature = currentWeatherData.main.temp;
     const condition = currentWeatherData.weather[0].description;
@@ -80,26 +101,61 @@ document.addEventListener('DOMContentLoaded', function () {
     const temperatureElement = document.getElementById('temperature');
     const conditionElement = document.getElementById('condition');
     const humidityElement = document.getElementById('humidity');
+    const weatherIconElement = document.getElementById('weather-icon');
+
+    // Use the condition code to map to a Font Awesome icon
+    const conditionCode = currentWeatherData.weather[0].icon;
+    const weatherIconClass = getWeatherIcon(conditionCode);
 
     temperatureElement.textContent = `${temperature.toFixed(1)}°F`;
     conditionElement.textContent = condition;
     humidityElement.textContent = `${humidity}%`;
+    weatherIconElement.className = weatherIconClass;
+  }
+
+  function getWeatherIcon(conditionCode) {
+    // Map condition code to Font Awesome icons (Replace with your mappings)
+    if (conditionCode === '01d') {
+      return 'fas fa-sun'; // Clear sky (day)
+    } else if (conditionCode === '01n') {
+      return 'fas fa-moon'; // Clear sky (night)
+    } else if (conditionCode === '02d') {
+      return 'fas fa-cloud-sun'; // Few clouds (day)
+    } else if (conditionCode === '02n') {
+      return 'fas fa-cloud-moon'; // Few clouds (night)
+    } else if (conditionCode.startsWith('03') || conditionCode.startsWith('04')) {
+      return 'fas fa-cloud'; // Scattered or broken clouds
+    } else if (conditionCode.startsWith('09') || conditionCode.startsWith('10')) {
+      return 'fas fa-cloud-rain'; // Rain showers
+    } else if (conditionCode.startsWith('11')) {
+      return 'fas fa-bolt'; // Thunderstorm
+    } else if (conditionCode.startsWith('13')) {
+      return 'fas fa-snowflake'; // Snow
+    } else if (conditionCode.startsWith('50')) {
+      return 'fas fa-smog'; // Mist or fog
+    } else {
+      return 'fas fa-question'; // Unknown or other conditions
+    }
   }
 
   // Async function to fetch weather data and display
   async function fetchAndDisplayWeather() {
     try {
       // Fetch current weather data in imperial units (Fahrenheit)
-      const currentWeatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`);
+      const currentWeatherResponse = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`
+      );
       const currentWeatherData = await currentWeatherResponse.json();
 
-      //console.log('Forecast Data:', currentWeatherData); // Add this line to log
+      console.log('Current Weather Data:', currentWeatherData);
 
       // Fetch 5-day forecast data in imperial units (Fahrenheit)
-      const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`);
+      const forecastResponse = await fetch(
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${locationData.lat}&lon=${locationData.lon}&appid=${apiKey}&units=imperial`
+      );
       const forecastData = await forecastResponse.json();
 
-      //console.log('Forecast Data:', forecastData); // Add this line to log
+      console.log('Full Forecast Data:', forecastData);
 
       // Display current weather
       displayCurrentWeather(currentWeatherData);
