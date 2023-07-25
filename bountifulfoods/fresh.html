@@ -59,7 +59,7 @@
     <main id="fresh-main">
         <div id="fresh-background">
             <!-- Fresh page content -->
-            <section id="fresh-form-section">
+            <div id="fresh-form-section">
             <!-- Form allowing users to build their own specialty drink -->
                 <form id="fresh-form">
                 <!-- Required user inputs: first name, email, phone number, three select elements with available fruits -->
@@ -80,6 +80,7 @@
                     <div class="form-group">
                         <label for="fruit1">Select Fruit 1:</label>
                         <select id="fruit1" required>
+                            <option value="">Choose...</option>
                             <!-- Options will be populated dynamically -->
                         </select>
                     </div>
@@ -87,6 +88,7 @@
                     <div class="form-group">
                         <label for="fruit2">Select Fruit 2:</label>
                         <select id="fruit2" required>
+                            <option value="">Choose...</option>
                             <!-- Options will be populated dynamically -->
                         </select>
                     </div>
@@ -94,6 +96,7 @@
                     <div class="form-group">
                         <label for="fruit3">Select Fruit 3:</label>
                         <select id="fruit3" required>
+                            <option value="">Choose...</option>
                             <!-- Options will be populated dynamically -->
                         </select>
                     </div>
@@ -105,7 +108,7 @@
         
                     <button id="submit-button" type="submit">Submit</button>
                 </form>
-            </section>
+            </div>
         </div>
         <!-- Modal Box -->
         <div id="order-modal" class="modal">
@@ -124,6 +127,6 @@
     </footer>
     <script src="scripts/lastupdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/fresh.js"defer></script>
+    <script src="scripts/fresh.js"></script>
 </body>
 </html>
