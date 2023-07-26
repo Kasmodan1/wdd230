@@ -469,7 +469,7 @@ select {
 }
 
 button {
-  background-color: #295B2B;
+  background-color: #1c501e;
   margin-bottom: 5px;
   color: #fff;
   padding: 12px 20px;
@@ -481,7 +481,7 @@ button {
 }
 
 button:hover {
-  background-color: #266d2a;
+  background-color: #173d18;
 }
 
 #output-area {
