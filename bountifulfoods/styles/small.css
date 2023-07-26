@@ -543,7 +543,8 @@ button:hover {
 /* ############################ Aboutus Page ####################################### */
 
 #aboutus-main {
-  background-color: white
+  background-color: #000000;
+  color: white;
 }
 
 .parallax-container-aboutus {
