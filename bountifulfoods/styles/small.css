@@ -307,7 +307,7 @@ main {
   width: 100%;
   min-height: 30vh;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .parallax-container2 {
@@ -415,7 +415,7 @@ footer a:hover {
 #fresh-body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f9f9f9;
-  color: #333;
+  color: black;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -469,7 +469,7 @@ select {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #295B2C;
   margin-bottom: 5px;
   color: #fff;
   padding: 12px 20px;
